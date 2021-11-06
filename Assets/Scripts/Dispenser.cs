@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Dispenser : MonoBehaviour
 {
-    [SerializedField] private DropLocation dropLocation;
+    // Need to access whether current drop location is occupied or not
+    public DropLocation dropLocation;
 
     // Start is called before the first frame update
     void Start()
