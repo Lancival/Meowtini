@@ -6,11 +6,14 @@ using UnityEngine;
 
 public class DropLocation : MonoBehaviour
 {
+	public bool isOccupied;
+	 
     void OnTriggerEnter2D(Collider2D collider)
     {
     	Draggable draggable = collider.gameObject.GetComponent<Draggable>();
     	if (draggable != null)
     	{
+			isOccupied = true;
     		draggable.SetTarget(transform.position);
     		OnDraggableEnter(draggable);
     	}
@@ -21,6 +24,7 @@ public class DropLocation : MonoBehaviour
     	Draggable draggable = collider.gameObject.GetComponent<Draggable>();
     	if (draggable != null)
     	{
+			isOccupied = false;
     		draggable.RemoveTarget();
     		OnDraggableExit(draggable);
     	}
