@@ -9,14 +9,19 @@ public class Draggable : MonoBehaviour
 {
 
 	private Vector3 initialPosition;
-	private Vector3? targetPosition;
+
+    // Previous DropLocation occupied by this Draggable, may be null
+    private DropLocation previous;
+    // DropLocation to move this drink to, may be null
+	private DropLocation target;
 
 	private Camera cam;
 
 	void Awake()
 	{
 		initialPosition = transform.position;
-		targetPosition = null;
+        previous = null;
+		target = null;
 
 		cam = Camera.main;
 	}
@@ -34,16 +39,30 @@ public class Draggable : MonoBehaviour
 
     void OnMouseUp()
     {
-    	transform.position = (targetPosition ?? initialPosition);
+        if (target)
+        {
+            // Remove Draggable from previous DropLocation
+            previous?.RemoveDraggable(this);
+            previous = target;
+
+            // Add Draggable to new DropLocation
+            transform.position = target.transform.position;
+            target.AddDraggable(this);
+        }
+        else
+        {
+            // Reset location
+            transform.position = initialPosition;
+        }
     }
 
-    public void SetTarget(Vector3 target)
+    public void SetTarget(DropLocation location)
     {
-    	targetPosition = target;
+    	target = location;
     }
 
     public void RemoveTarget()
     {
-    	targetPosition = null;
+    	target = null;
     }
 }

@@ -5,16 +5,15 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 
 public class DropLocation : MonoBehaviour
-{
-	public bool isOccupied;
-	 
+{	 
+    public bool isOccupied {get; private set;}
+
     void OnTriggerEnter2D(Collider2D collider)
     {
     	Draggable draggable = collider.gameObject.GetComponent<Draggable>();
     	if (draggable != null)
     	{
-			isOccupied = true;
-    		draggable.SetTarget(transform.position);
+    		draggable.SetTarget(this);
     		OnDraggableEnter(draggable);
     	}
     }
@@ -24,10 +23,19 @@ public class DropLocation : MonoBehaviour
     	Draggable draggable = collider.gameObject.GetComponent<Draggable>();
     	if (draggable != null)
     	{
-			isOccupied = false;
     		draggable.RemoveTarget();
     		OnDraggableExit(draggable);
     	}
+    }
+
+    public virtual void AddDraggable(Draggable draggable)
+    {
+        isOccupied = true;
+    }
+
+    public virtual void RemoveDraggable(Draggable draggable)
+    {
+        isOccupied = false;
     }
 
     protected virtual void OnDraggableEnter(Draggable draggable)
