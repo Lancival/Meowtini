@@ -11,9 +11,11 @@ public class CustomerController : MonoBehaviour
     [Header("Error Calculation")]
     [SerializeField] int errorThreshold = 30;
 
-
+    [Header("UI Display")]
     [SerializeField] SpriteRenderer timerIcon;
     private Color iconColor = Color.green;
+
+    private Drink targDrink;
 
 
     // Start is called before the first frame update
@@ -56,7 +58,6 @@ public class CustomerController : MonoBehaviour
             }
         }
 
-
         // Liquid check
         float tolerance = 20f * Mathf.Pow(0.8f, 0);  // 0 should be set to the difficulty variable in the future
         
@@ -84,9 +85,20 @@ public class CustomerController : MonoBehaviour
                 errorValue += 5;  // Gain 5 errorValue for missing a liquid
             }
         }
-
-
         return errorValue < errorThreshold;
+    }
+
+    // Handle drink submission - Call this function when a drink is delivered to the customer
+    void CheckDrink(Drink candidate, Drink target)
+    {
+        if (EvaluateDrink(candidate, target))  // Drink acceptable
+        {
+            GameManager.Instance.DrinkAccepted(1);
+        } else  // Drink unacceptable
+        {
+            GameManager.Instance.DrinkDenied(1);
+        }
+        GameObject.Destroy(gameObject);
     }
 
     // Updates the time
