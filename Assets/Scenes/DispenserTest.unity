@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 530872418}
   - component: {fileID: 530872420}
   - component: {fileID: 530872419}
+  - component: {fileID: 530872421}
   m_Layer: 0
   m_Name: Lever
   m_TagString: Untagged
@@ -440,6 +441,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &530872421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530872417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2d73d44ee34497f87145c13269bd80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dispenser: {fileID: 81709384}
 --- !u!1001 &769012220
 PrefabInstance:
   m_ObjectHideFlags: 0
