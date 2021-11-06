@@ -30,15 +30,27 @@ public class GameManager : GenericSingleton<GameManager>
         timer += Time.deltaTime;
         secondsElapsed = (int)(timer % 60);
     }
+    
+    # region Serving Drinks
+    public void DrinkAccepted(int amount)
+    {
+        IncreaseComboCounter();
+        IncreaseSatisfaction(amount);
+    }
+    public void DrinkDenied(int amount)
+    {   
+        ResetComboCounter();
+        DecreaseSatisfaction(amount);
+    } 
+    #endregion
 
     # region Combo Functions
-    public void ResetComboCounter() { combo = 0; }
-    public void IncreaseComboCounter() { combo++; }
+    private void ResetComboCounter() { combo = 0; }
+    private void IncreaseComboCounter() { combo++; }
     #endregion
 
     # region Satisfaction Functions
-    public void IncreaseSatisfaction(int amount) { totalSatisfaction += amount; }
-    public void DecreaseSatisfaction(int amount) { totalSatisfaction -= amount; }
+    private void IncreaseSatisfaction(int amount) { totalSatisfaction += amount; }
+    private void DecreaseSatisfaction(int amount) { totalSatisfaction -= amount; }
     #endregion 
-    
 }
