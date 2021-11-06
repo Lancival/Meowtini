@@ -7,31 +7,17 @@ public class CustomerController : MonoBehaviour
     [SerializeField] int startingTimer = 60; // In seconds
     public int counter;
     public int timer;
-    private float startTime;
 
     [SerializeField] SpriteRenderer timerIcon;
     private Color iconColor = Color.green;
 
+
     // Start is called before the first frame update
     void Start()
     {
-        counter = 0;
         timer = startingTimer;
-        startTime = Time.time;
         timerIcon.color = iconColor;
         InvokeRepeating("HandleTimer", 0, 1);
-    }
-
-    // Executes 50 times per second
-    private void FixedUpdate()
-    {
-        //counter++;
-        //if (counter >= 50)
-        //{
-        //    timer--;
-        //    counter = 0;
-        //}
-        // HandleTimer();
     }
 
 
@@ -48,7 +34,7 @@ public class CustomerController : MonoBehaviour
         if (timer > startingTimer / 3 * 2) // Transition from green to yellow
         {
             // iconColor = new Vector4(iconColor.r + 0.05f, iconColor.g, iconColor.b, iconColor.a);
-            iconColor = Color.Lerp(Color.green, Color.yellow, 0.05f);  // Probably a better way to do it
+            iconColor = Color.Lerp(Color.yellow, Color.green, 0.05f * (timer - startingTimer / 3 * 2));  // Probably a better way to do it
         }
         else if (timer == startingTimer / 3 * 2) // Set to yellow
         {
@@ -56,15 +42,15 @@ public class CustomerController : MonoBehaviour
         }
         else if (timer > startingTimer / 3)  // Transition from yellow to red
         {
-            iconColor = new Vector4(iconColor.r, iconColor.g - 0.05f, iconColor.b, iconColor.a);
+            iconColor = Color.Lerp(Color.red, Color.yellow, 0.05f * (timer - startingTimer / 3));
         } 
         else if (timer == startingTimer / 3)  // Set to red
         {
             iconColor = Color.red;
         } 
-        else
+        else  // Transition from red to (nearly) black
         {
-            // iconColor = new Vector4(iconColor.r + 255 / 20, iconColor.g, iconColor.b, iconColor.a);
+            iconColor = Color.Lerp(Color.Lerp(Color.black, Color.red, 0.2f) , Color.red, 0.05f * (timer));
         }
         timerIcon.color = iconColor;
         if (timer == 0)
