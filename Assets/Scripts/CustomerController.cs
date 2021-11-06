@@ -57,6 +57,8 @@ public class CustomerController : MonoBehaviour
         {
             Debug.Log("ORDER FAILED");
             timerIcon.color = Color.black;
+            GameManager.Instance.DecreaseSatisfaction(1);
+            GameObject.Destroy(gameObject);
         }
     }
 }
