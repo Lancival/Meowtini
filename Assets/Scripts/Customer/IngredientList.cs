@@ -8,7 +8,7 @@ public class IngredientList : MonoBehaviour
     // Start is called before the first frame update
     [Header("Display Elements")]
     [SerializeField] SpriteRenderer icon;
-    [SerializeField] TextMeshPro text;
+    [SerializeField] TextMeshProUGUI text;
 
     [SerializeField] SpriteList spriteList;
 
@@ -24,7 +24,7 @@ public class IngredientList : MonoBehaviour
         icon.sprite = display;
         icon.enabled = true;
         // Display text
-        
+        text.SetText(" = "+ amount);
     }
 
 }
