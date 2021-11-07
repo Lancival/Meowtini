@@ -10,8 +10,8 @@ public class SpriteList : MonoBehaviour
     [SerializeField] Sprite ice;
     [SerializeField] Sprite olive;
     [SerializeField] Sprite strawberry;
-    [SerializeField] Sprite lime;
-    [SerializeField] Sprite mint; 
+    [SerializeField] Sprite starLit;
+    [SerializeField] Sprite starUnlit; 
 
     private Dictionary<string, Sprite> sprites = new Dictionary<string, Sprite>();
 
@@ -22,8 +22,8 @@ public class SpriteList : MonoBehaviour
         sprites.Add("ice", ice);
         sprites.Add("olive", olive);
         sprites.Add("strawberry", strawberry);
-        sprites.Add("lime", lime);
-        sprites.Add("mint", mint);
+        sprites.Add("starLit", starLit);
+        sprites.Add("starUnlit", starUnlit);
     }
 
     public Sprite GetSprite(string keyword)
