@@ -53,4 +53,17 @@ public class Drink : MonoBehaviour
             toppings[topping] = 1;
         }
     }
+
+    public void PrintInfo()
+    {
+        Debug.Log("Cup shape: " + cupShape);
+        foreach(string topping in toppings.Keys)
+        {
+            Debug.Log(topping);
+        }
+        foreach(string liquid in liquids.Keys)
+        {
+            Debug.Log(liquid);
+        }
+    }
 }

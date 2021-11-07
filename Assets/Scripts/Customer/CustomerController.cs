@@ -14,6 +14,7 @@ public class CustomerController : MonoBehaviour
     [Header("UI Display")]
     [SerializeField] SpriteRenderer timerIcon;
     [SerializeField] IngredientList orangeDrink;
+    [SerializeField] SpriteMask mask;
     private Color iconColor = Color.green;
 
     [SerializeField] Drink targDrink;
@@ -26,7 +27,8 @@ public class CustomerController : MonoBehaviour
         timerIcon.color = iconColor;
         // orangeDrink.DisplayIngredient("strawberry", 1);
         InvokeRepeating("HandleTimer", 0, 1);
-        targDrink = DrinkGenerator.GenerateDrink(targDrink, 1);  // Needs to reference GameManager for difficulty
+        targDrink = DrinkGenerator.GenerateDrink(targDrink, 3);  // Needs to reference GameManager for difficulty
+        // targDrink.PrintInfo();  // For debugging
     } 
 
     void DisplayRecipe()  // WIP - do not use
@@ -111,10 +113,17 @@ public class CustomerController : MonoBehaviour
         GameObject.Destroy(gameObject);
     }
 
+    private void Update()
+    {
+        float yVal = Mathf.Lerp(timerIcon.transform.position.y + 0.93f, timerIcon.transform.position.y + 0.13f, timer / startingTimer);
+        mask.transform.position = new Vector3(timerIcon.transform.position.x, Mathf.Lerp(mask.transform.position.y, yVal, 0.6f));
+    }
+
     // Updates the time
     void HandleTimer()
     {
         timer--;
+        /*
         if (timer > startingTimer / 3 * 2) // Transition from green to yellow
         {
             // iconColor = new Vector4(iconColor.r + 0.05f, iconColor.g, iconColor.b, iconColor.a);
@@ -137,6 +146,8 @@ public class CustomerController : MonoBehaviour
             iconColor = Color.Lerp(Color.Lerp(Color.black, Color.red, 0.2f) , Color.red, 0.05f * (timer));
         }
         timerIcon.color = iconColor;
+        */
+
         if (timer == 0)
         {
             Debug.Log("ORDER FAILED");
