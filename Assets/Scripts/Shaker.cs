@@ -15,6 +15,9 @@ public class Shaker : MonoBehaviour
     [SerializeField] private float timer;
     [SerializeField] private float period = 0.5f;
     [SerializeField] private bool startTimer = false;
+
+    [Header("Shaker Cap")]
+    [SerializeField] private GameObject shakerCap;
     
     void Start() {
         liquids = new Dictionary<string, float>();
@@ -61,5 +64,21 @@ public class Shaker : MonoBehaviour
                 }      
             }
         }    
+    }
+
+    public void DeactivateShakerCap()
+    {
+        if (shakerCap == null)
+            Debug.LogError("Forgot to assign shaker cap to shaker!");
+        else
+            shakerCap.SetActive(false);
+    }
+
+    public void ActivateShakerCap()
+    {
+        if (shakerCap == null)
+            Debug.LogError("Forgot to assign shaker cap to shaker!");
+        else
+            shakerCap.SetActive(true);
     }
 }
