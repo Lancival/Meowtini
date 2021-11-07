@@ -28,10 +28,10 @@ public class Shaker : MonoBehaviour
         }
         if (other.gameObject.tag == "Dispenser")
         {
-            Debug.Log("OnTriggerEnter2D called for the Shaker");
             dispenser = other.gameObject.GetComponent<Dispenser>();
             Animator anim = other.gameObject.GetComponent<Animator>();
             anim.SetBool("Pour", true);
+            dispenser.ActivatePourAnimation();
             startTimer = true;
         }
     }
@@ -39,10 +39,10 @@ public class Shaker : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other) {
         if (other.gameObject.tag == "Dispenser")
         {
-            Debug.Log("OnTriggerExit2D called for the Shaker");
             Animator anim = other.gameObject.GetComponent<Animator>();
             anim.SetBool("Pour", false);
             timer = period;
+            dispenser.DeactivatePourAnimation();
             dispenser = null;
             startTimer = false;
         }

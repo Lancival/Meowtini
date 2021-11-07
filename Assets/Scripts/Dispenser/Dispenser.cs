@@ -10,10 +10,25 @@ public class Dispenser : MonoBehaviour
     [SerializeField] private float dispenserRate;
 
     private Shaker shaker;
+    [SerializeField] private GameObject pour;
 
     void Start()
     {
-        shaker = FindObjectOfType<Shaker>();    
+        shaker = FindObjectOfType<Shaker>();   
+    }
+
+    public void ActivatePourAnimation()
+    {
+        pour.SetActive(true);
+        Animator anim = pour.GetComponent<Animator>();
+        anim.SetBool(liquid, true);    
+    }
+
+    public void DeactivatePourAnimation()
+    {
+        Animator anim = pour.GetComponent<Animator>();
+        anim.SetBool(liquid, false);
+        pour.SetActive(false);
     }
 
     public void DispenseLiquid()
