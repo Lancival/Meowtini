@@ -13,6 +13,7 @@ public class CustomerController : MonoBehaviour
 
     [Header("UI Display")]
     [SerializeField] SpriteRenderer timerIcon;
+    [SerializeField] IngredientList ingredientList;
     private Color iconColor = Color.green;
 
     private Drink targDrink;
@@ -24,6 +25,12 @@ public class CustomerController : MonoBehaviour
         timer = startingTimer;
         timerIcon.color = iconColor;
         InvokeRepeating("HandleTimer", 0, 1); 
+    } 
+
+    void DisplayRecipe()
+    {
+        IngredientList ing = Object.Instantiate(ingredientList);
+        ing.DisplayIngredient("ice", 1);
     }
 
     // Judges if the candidate matches the target sufficiently
