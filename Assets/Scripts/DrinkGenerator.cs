@@ -26,16 +26,18 @@ public class DrinkGenerator : MonoBehaviour
                 break;
         }
         // Assign ice cubes based on difficulty
+        int numIce = 0;
         if (difficulty > 3)
         {
-            result.numIce = Mathf.RoundToInt(Random.Range(0f, 3f));
+            numIce = Mathf.RoundToInt(Random.Range(0f, 3f));
         } else if (difficulty > 1)
         {
-            result.numIce = Mathf.RoundToInt(Random.Range(0f, 2f));
+            numIce = Mathf.RoundToInt(Random.Range(0f, 2f));
         } else
         {
-            result.numIce = Mathf.RoundToInt(Random.Range(0f, 1f));
+            numIce = Mathf.RoundToInt(Random.Range(0f, 1f));
         }
+        result.toppings.Add("ice", numIce);
         // Assign toppings based on difficulty
         int maxToppings = difficulty / 3;
         for (int i = 0; i < maxToppings; i++)  // NOTE: Currently assumes you can't have more than 1 of each topping
