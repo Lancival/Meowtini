@@ -9,7 +9,7 @@ public class Topping : MonoBehaviour
 
 	private Camera cam;
 	private Drink target;
-    private string name = "DefaultTopping";
+    private string toppingName = "DefaultTopping";
 
 	void Awake()
 	{
@@ -28,7 +28,7 @@ public class Topping : MonoBehaviour
         if (target != null)
         {
     	   transform.position = target.transform.position;
-           target.AddTopping(name);
+           target.AddTopping(toppingName);
         }
         Destroy(gameObject);
     }
