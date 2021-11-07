@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class DrinkGenerator : MonoBehaviour
 {
-    public static Drink GenerateDrink(int difficulty)
+    [SerializeField] GameObject drinkTemplate;
+    public static Drink GenerateDrink(Drink result, int difficulty)
     {
         List<string> toppingList = new List<string>() { "cherry", "strawberry", "olive", "mint", "cream", "lime" };
-        Drink result = new Drink();
+
         // Set cup shape
         int state = Mathf.RoundToInt(Random.Range(0f, 2f));  // Random int from 0-2 inclusive
         result.SetCupShape(state);
