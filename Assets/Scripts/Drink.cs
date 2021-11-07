@@ -5,15 +5,24 @@ using UnityEngine;
 public class Drink : MonoBehaviour
 {
     /// <summary>
-    /// This class is just a placeholder that stores some data types in order to implement checking a drink's accuracy
-    /// through CustomerController
+    /// Drink creation steps: choose cup shape, pour alcohol, choose liquid, add ice, shake, pour liquid, add toppings
     /// </summary>
-    
-    public Dictionary<string, float> liquids;  // String is the liquid name, float is the amount (units undecided)
+
+
+    public Dictionary<string, float> liquids;  // String is the liquid name, float is the amount
     public Dictionary<string, int> toppings;  // String is topping name, int is number of said topping
+    public int numIce;
 
     public float capacity; // Maximum volume of liquid drink can hold
     public float curVolume = 0; // Current volume of the drink
+
+    public enum CupShapes
+    {
+        funnel,
+        cylinder,
+        flask
+    }
+    public CupShapes cupShape;
 
 
     void Start()
@@ -24,8 +33,25 @@ public class Drink : MonoBehaviour
         toppings.Clear();
     }
 
-    void Update()
+    public void SetCupShape(CupShapes shape)
     {
+        cupShape = shape;
+    }
 
+    public void SetCupShape(int shape)
+    {
+        cupShape = (CupShapes) shape; 
+    }
+
+    public void AddTopping(string topping)
+    {
+        if (toppings.ContainsKey(topping))
+        {
+            toppings[topping]++;
+        }
+        else
+        {
+            toppings[topping] = 1;
+        }
     }
 }
