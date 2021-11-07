@@ -4,19 +4,9 @@ using UnityEngine;
 
 public class DrinkGenerator : MonoBehaviour
 {
-    List<string> toppings = new List<string>();
-    private void Start()
-    {
-        toppings.Add("cherry");
-        toppings.Add("strawberry");
-        toppings.Add("olive");
-        toppings.Add("mint");
-        toppings.Add("cream");
-        toppings.Add("lime");
-    }
-
     public static Drink GenerateDrink(int difficulty)
     {
+        List<string> toppingList = new List<string>() { "cherry", "strawberry", "olive", "mint", "cream", "lime" };
         Drink result = new Drink();
         // Set cup shape
         int state = Mathf.RoundToInt(Random.Range(0f, 2f));  // Random int from 0-2 inclusive
@@ -48,7 +38,12 @@ public class DrinkGenerator : MonoBehaviour
         }
         // Assign toppings based on difficulty
         int maxToppings = difficulty / 3;
-
+        for (int i = 0; i < maxToppings; i++)  // NOTE: Currently assumes you can't have more than 1 of each topping
+        {
+            int index = Mathf.RoundToInt(Random.Range(0f, 1f));
+            result.toppings.Add(toppingList[index], 1);
+            toppingList.RemoveAt(index);
+        }
 
         return result;
     }
