@@ -25,7 +25,8 @@ public class CustomerController : MonoBehaviour
         timer = startingTimer;
         timerIcon.color = iconColor;
         // orangeDrink.DisplayIngredient("strawberry", 1);
-        InvokeRepeating("HandleTimer", 0, 1); 
+        InvokeRepeating("HandleTimer", 0, 1);
+        targDrink = DrinkGenerator.GenerateDrink(1);  // Needs to reference GameManager for difficulty
     } 
 
     void DisplayRecipe()  // WIP - do not use
