@@ -248,6 +248,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropLocation: {fileID: 769012222}
+  liquid: Purple
+  dispenserRate: 1
 --- !u!1 &114608435
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +456,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dispenser: {fileID: 81709384}
+  timer: 0
+  period: 0.05
+  startTimer: 0
 --- !u!1001 &769012220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -542,6 +547,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 770147438154568279, guid: a35e14f452b26459394030f0e46bec3e, type: 3}
+      propertyPath: capacity
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6392238002954959750, guid: a35e14f452b26459394030f0e46bec3e, type: 3}
       propertyPath: m_RootOrder
       value: 1

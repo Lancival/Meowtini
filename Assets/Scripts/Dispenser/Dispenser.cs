@@ -22,35 +22,33 @@ public class Dispenser : MonoBehaviour
     // Gets called by OnMouseDown() in Lever.cs
     public void DispenseLiquid()
     {
-        if (dropLocation.isOccupied)
-        {
+        if (dropLocation.isOccupied && dropLocation.draggableReference != null)
+        {   
+            drink = dropLocation.draggableReference.GetComponent<Drink>();
             if (drink == null)
             {
                 Debug.LogError("Expecting drink to be occupying a drop location.");
+                return;
             } 
 
             // Iterate each base liquid color and calculate how much is currently stored in the shaker
             float sum = 0;
-            foreach(KeyValuePair<string, float> entry in drink.liquids)
+            foreach(var key in drink.liquids.Keys)
             {
-                sum += entry.Value ;
+                sum += drink.liquids[key];
             }   
-
+            
+            // If drink is at max capacity, don't add more
             if (sum >= drink.capacity)
                 return;
             
-            drink.liquids[liquid] += dispenserRate;
-            drink.curVolume = sum + dispenserRate;
-        }
-        
-    	Debug.Log("Liquid dispensing functionality not yet implemented.");
-    }
+            // Check if liquid already exists in dictionary
+            if (drink.liquids.ContainsKey(liquid))
+                drink.liquids[liquid] += dispenserRate;
+            else
+                drink.liquids[liquid] = dispenserRate;
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Drink" && !dropLocation.isOccupied)
-        {
-            drink = collision.gameObject.GetComponent<Drink>();
+            drink.curVolume = sum + dispenserRate;
         }
     }
 }

@@ -7,6 +7,7 @@ using UnityEngine;
 public class DropLocation : MonoBehaviour
 {	 
     public bool isOccupied {get; private set;}
+    public GameObject draggableReference {get; private set;}
 
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -15,6 +16,7 @@ public class DropLocation : MonoBehaviour
     	{
     		draggable.SetTarget(this);
     		OnDraggableEnter(draggable);
+            draggableReference = collider.gameObject;
     	}
     }
 
@@ -25,6 +27,7 @@ public class DropLocation : MonoBehaviour
     	{
     		draggable.RemoveTarget();
     		OnDraggableExit(draggable);
+            draggableReference = null;
     	}
     }
 

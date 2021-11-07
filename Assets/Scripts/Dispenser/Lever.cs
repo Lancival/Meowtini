@@ -7,9 +7,36 @@ using UnityEngine;
 public class Lever : MonoBehaviour
 {
     [SerializeField] private Dispenser dispenser;
+    [SerializeField] private float timer;
+    [SerializeField] private float period = 0.5f;
+    [SerializeField] private bool startTimer = false;
+
+    void Start()
+    {
+        timer = period;
+    }
 
     void OnMouseDown()
     {
-    	dispenser.DispenseLiquid();
+    	startTimer = true;
+    }
+
+    void OnMouseDrag()
+    {
+        if (startTimer)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                dispenser.DispenseLiquid();
+                timer = period;
+            }
+        }
+    }
+
+    void OnMouseUp()
+    {
+        startTimer = false;
+        timer = period;
     }
 }

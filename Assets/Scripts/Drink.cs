@@ -12,17 +12,20 @@ public class Drink : MonoBehaviour
     public Dictionary<string, float> liquids;  // String is the liquid name, float is the amount (units undecided)
     public Dictionary<string, int> toppings;  // String is topping name, int is number of said topping
 
-    public float capacity {get; private set;} // Volume of liquid drink can hold
-    public float curVolume {get; set;}
+    public float capacity; // Maximum volume of liquid drink can hold
+    public float curVolume = 0; // Current volume of the drink
 
 
     void Start()
     {
-        
+        liquids = new Dictionary<string, float>();
+        liquids.Clear();
+        toppings = new Dictionary<string, int>();
+        toppings.Clear();
     }
 
     void Update()
     {
-        
+
     }
 }
