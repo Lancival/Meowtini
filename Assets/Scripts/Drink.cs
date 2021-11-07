@@ -24,8 +24,15 @@ public class Drink : MonoBehaviour
         toppings.Clear();
     }
 
-    void Update()
+    public void AddTopping(string topping)
     {
-
+        if (toppings.ContainsKey(topping))
+        {
+            toppings[topping]++;
+        }
+        else
+        {
+            toppings[topping] = 1;
+        }
     }
 }
