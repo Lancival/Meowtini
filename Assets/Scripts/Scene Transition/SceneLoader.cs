@@ -12,15 +12,17 @@ public class SceneLoader : MonoBehaviour
 	// Whether this SceneLoader has started loading the next scene
 	private bool loading = false;
 	
-	[Tooltip("Name of the next scene.")]
-	[SerializeField] private string nextScene;
+    [Header("Settings")]
+	   [Tooltip("Name of the next scene.")]
+	   [SerializeField] private string nextScene;
 
-	[Tooltip("Duration of the scene transition.")]
-	[Range(0, 60)]
-	[SerializeField] private float duration = 1.0f;
+	   [Tooltip("Duration of the scene transition.")]
+	   [Range(0, 60)]
+	   [SerializeField] private float duration = 1.0f;
 
-	[Tooltip("Event that triggers end-of-scene transitions.")]
-	public UnityEvent<float> onSceneEnd = new UnityEvent<float>();
+    [Header("Events")]
+	   [Tooltip("Event that triggers end-of-scene transitions.")]
+	   public UnityEvent<float> onSceneEnd = new UnityEvent<float>();
 
 	void Awake()
 	{
@@ -46,20 +48,25 @@ public class SceneLoader : MonoBehaviour
         float time = Time.time;
 
         // Start loading the next scene asynchronously.
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(nextScene);
-        asyncOperation.allowSceneActivation = false;
+        AsyncOperation sceneLoad = SceneManager.LoadSceneAsync(nextScene);
+        if (sceneLoad == null)
+        {
+            yield break;
+        }
 
         // Wait until the next scene has been loaded in the background.
-        while (asyncOperation != null && !asyncOperation.isDone)
+        sceneLoad.allowSceneActivation = false;
+        while (!sceneLoad.isDone)
         {
             // Don't allow the next scene to activate until the transition duration has finished.
             if (Time.time - time > duration)
-                asyncOperation.allowSceneActivation = true;
+                sceneLoad.allowSceneActivation = true;
 
             yield return null;
         }
     }
 
+    #region Wrapper Functions
     // Load the next scene
     public void LoadNextScene() {
     	if (nextScene == null)
@@ -86,4 +93,5 @@ public class SceneLoader : MonoBehaviour
             StartCoroutine(LoadSceneAsync(sceneName, duration));
         }
     }
+    #endregion
 }
