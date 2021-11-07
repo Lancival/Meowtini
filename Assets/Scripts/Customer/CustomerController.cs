@@ -16,7 +16,7 @@ public class CustomerController : MonoBehaviour
     [SerializeField] IngredientList orangeDrink;
     private Color iconColor = Color.green;
 
-    private Drink targDrink;
+    [SerializeField] Drink targDrink;
 
 
     // Start is called before the first frame update
@@ -26,7 +26,7 @@ public class CustomerController : MonoBehaviour
         timerIcon.color = iconColor;
         // orangeDrink.DisplayIngredient("strawberry", 1);
         InvokeRepeating("HandleTimer", 0, 1);
-        targDrink = DrinkGenerator.GenerateDrink(1);  // Needs to reference GameManager for difficulty
+        targDrink = DrinkGenerator.GenerateDrink(targDrink, 1);  // Needs to reference GameManager for difficulty
     } 
 
     void DisplayRecipe()  // WIP - do not use
