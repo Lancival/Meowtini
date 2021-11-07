@@ -1,7 +1,466 @@
 fileFormatVersion: 2
 guid: 597be20918d7b8c41a64ce51870b804e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1047554565846833672
+    second: Pour_0
+  - first:
+      213: 4023261563681506803
+    second: Pour_1
+  - first:
+      213: 462747907405243844
+    second: Pour_2
+  - first:
+      213: 2395674313509061543
+    second: Pour_3
+  - first:
+      213: -2469477425122186406
+    second: Pour_4
+  - first:
+      213: 7612852764034248466
+    second: Pour_5
+  - first:
+      213: -8590134390638551324
+    second: Pour_6
+  - first:
+      213: -4794399818255503614
+    second: Pour_7
+  - first:
+      213: 1799269055804962994
+    second: Pour_8
+  - first:
+      213: 774463338683553586
+    second: Pour_9
+  - first:
+      213: -4762829471099916313
+    second: Pour_10
+  - first:
+      213: -1146545769463652839
+    second: Pour_11
+  - first:
+      213: 8066760539850659980
+    second: Pour_12
+  - first:
+      213: 8970094014381724053
+    second: Pour_13
+  - first:
+      213: 9166419828119706130
+    second: Pour_14
+  - first:
+      213: 7134062384373004257
+    second: Pour_15
+  - first:
+      213: -1815386120311136833
+    second: Pour_16
+  - first:
+      213: 4934401546516688651
+    second: Pour_17
+  - first:
+      213: -1654969061643798345
+    second: Pour_18
+  - first:
+      213: 385081528441122012
+    second: Pour_19
+  - first:
+      213: -1874778751324514199
+    second: Pour_20
+  - first:
+      213: -2433447222615417769
+    second: Pour_21
+  - first:
+      213: -3721677703888095041
+    second: Pour_22
+  - first:
+      213: 5230811287553800091
+    second: Pour_23
+  - first:
+      213: 2944705315872761200
+    second: Pour_24
+  - first:
+      213: -2143986255502148662
+    second: Pour_25
+  - first:
+      213: 5711135368643661677
+    second: Pour_26
+  - first:
+      213: 8651532001951892768
+    second: Pour_27
+  - first:
+      213: -8992798516037159795
+    second: Pour_28
+  - first:
+      213: -5925940102522753014
+    second: Pour_29
+  - first:
+      213: -3970641833610899905
+    second: Pour_30
+  - first:
+      213: -234238964070628924
+    second: Pour_31
+  - first:
+      213: -3494841103588300116
+    second: Pour_32
+  - first:
+      213: -8504059704620785629
+    second: Pour_33
+  - first:
+      213: 3661496376997778744
+    second: Pour_34
+  - first:
+      213: -3202114540967842056
+    second: Pour_35
+  - first:
+      213: 905340142534478212
+    second: Pour_36
+  - first:
+      213: 2746064458016710922
+    second: Pour_37
+  - first:
+      213: 5074281119458239790
+    second: Pour_38
+  - first:
+      213: 3486425802586607865
+    second: Pour_39
+  - first:
+      213: -2229035939561988818
+    second: Pour_40
+  - first:
+      213: -7671224992155571784
+    second: Pour_41
+  - first:
+      213: 7742908721900531650
+    second: Pour_42
+  - first:
+      213: 4032642703971261576
+    second: Pour_43
+  - first:
+      213: -2201133212063078029
+    second: Pour_44
+  - first:
+      213: 1055277588699533813
+    second: Pour_45
+  - first:
+      213: -1919058805981756534
+    second: Pour_46
+  - first:
+      213: -3027021821992163807
+    second: Pour_47
+  - first:
+      213: 2784167318777019918
+    second: Pour_48
+  - first:
+      213: -7932668258087333403
+    second: Pour_49
+  - first:
+      213: -3065803630404248949
+    second: Pour_50
+  - first:
+      213: 1223565429855823958
+    second: Pour_51
+  - first:
+      213: 4299941031354494166
+    second: Pour_52
+  - first:
+      213: 4483678340815007305
+    second: Pour_53
+  - first:
+      213: 4928459783129482540
+    second: Pour_54
+  - first:
+      213: -7086658891703678414
+    second: Pour_55
+  - first:
+      213: -2456122515949378683
+    second: Pour_56
+  - first:
+      213: -4608828581540968516
+    second: Pour_57
+  - first:
+      213: -5770315909383445416
+    second: Pour_58
+  - first:
+      213: -492845691456740804
+    second: Pour_59
+  - first:
+      213: 4035591982171993781
+    second: Pour_60
+  - first:
+      213: 1788040144343643243
+    second: Pour_61
+  - first:
+      213: 7775101881015191679
+    second: Pour_62
+  - first:
+      213: -132866897462807847
+    second: Pour_63
+  - first:
+      213: 8657380170931575168
+    second: Pour_64
+  - first:
+      213: 6588144005011313222
+    second: Pour_65
+  - first:
+      213: -5657279874736975906
+    second: Pour_66
+  - first:
+      213: 7955463008012646363
+    second: Pour_67
+  - first:
+      213: -5488429487282101663
+    second: Pour_68
+  - first:
+      213: -6517746429518055983
+    second: Pour_69
+  - first:
+      213: 5738427426769897305
+    second: Pour_70
+  - first:
+      213: 8772099384198235165
+    second: Pour_71
+  - first:
+      213: -5348978006470610253
+    second: Pour_72
+  - first:
+      213: 5226267904123412147
+    second: Pour_73
+  - first:
+      213: 4436345040523281336
+    second: Pour_74
+  - first:
+      213: 151438961108701012
+    second: Pour_75
+  - first:
+      213: -4201413086957202399
+    second: Pour_76
+  - first:
+      213: 7074539893446254178
+    second: Pour_77
+  - first:
+      213: 6515270197892921954
+    second: Pour_78
+  - first:
+      213: -7033541596781273549
+    second: Pour_79
+  - first:
+      213: -7556576821744226616
+    second: Pour_80
+  - first:
+      213: 8672265100586875090
+    second: Pour_81
+  - first:
+      213: -5596848745084887067
+    second: Pour_82
+  - first:
+      213: -4813386469859240769
+    second: Pour_83
+  - first:
+      213: -1116164129452997966
+    second: Pour_84
+  - first:
+      213: -4997588114038600122
+    second: Pour_85
+  - first:
+      213: 8255077806166713202
+    second: Pour_86
+  - first:
+      213: -2975224031397410908
+    second: Pour_87
+  - first:
+      213: -1353420209423349301
+    second: Pour_88
+  - first:
+      213: 6972957533784401806
+    second: Pour_89
+  - first:
+      213: -1641415846773753467
+    second: Pour_90
+  - first:
+      213: -4843912134141565560
+    second: Pour_91
+  - first:
+      213: 3257740197756209821
+    second: Pour_92
+  - first:
+      213: 3234794810563470911
+    second: Pour_93
+  - first:
+      213: 8484100155117488414
+    second: Pour_94
+  - first:
+      213: 5579297866216338449
+    second: Pour_95
+  - first:
+      213: -720545339958516534
+    second: Pour_96
+  - first:
+      213: 83654454091229119
+    second: Pour_97
+  - first:
+      213: -316936475124490298
+    second: Pour_98
+  - first:
+      213: -5578358715422922066
+    second: Pour_99
+  - first:
+      213: 6244634541892142150
+    second: Pour_100
+  - first:
+      213: 6912712701414033867
+    second: Pour_101
+  - first:
+      213: -5748798056015506943
+    second: Pour_102
+  - first:
+      213: -5002560340841052176
+    second: Pour_103
+  - first:
+      213: -8354274658625908697
+    second: Pour_104
+  - first:
+      213: 4125965325877045125
+    second: Pour_105
+  - first:
+      213: -3655224034754553844
+    second: Pour_106
+  - first:
+      213: -8220133740787065329
+    second: Pour_107
+  - first:
+      213: -8618097004175795027
+    second: Pour_108
+  - first:
+      213: -7807801819504922969
+    second: Pour_109
+  - first:
+      213: 7972600155052271342
+    second: Pour_110
+  - first:
+      213: 1057341659502142811
+    second: Pour_111
+  - first:
+      213: -8289879740760258846
+    second: Pour_112
+  - first:
+      213: 8254723723576946030
+    second: Pour_113
+  - first:
+      213: -6229199970660234835
+    second: Pour_114
+  - first:
+      213: -2141120388963313120
+    second: Pour_115
+  - first:
+      213: 2769697924833204640
+    second: Pour_116
+  - first:
+      213: -7586598212483935348
+    second: Pour_117
+  - first:
+      213: -5101753383480363106
+    second: Pour_118
+  - first:
+      213: 1716684665736116425
+    second: Pour_119
+  - first:
+      213: -3284052764618166698
+    second: Pour_120
+  - first:
+      213: 3095010472529347303
+    second: Pour_121
+  - first:
+      213: 3184532702143325508
+    second: Pour_122
+  - first:
+      213: 2378586368691188523
+    second: Pour_123
+  - first:
+      213: -7934905822960149167
+    second: Pour_124
+  - first:
+      213: 9009033314529578531
+    second: Pour_125
+  - first:
+      213: 7491382423912682802
+    second: Pour_126
+  - first:
+      213: -6092802431428483759
+    second: Pour_127
+  - first:
+      213: -2885283817506550830
+    second: Pour_128
+  - first:
+      213: -1366633863572280316
+    second: Pour_129
+  - first:
+      213: -6405036634154874293
+    second: Pour_130
+  - first:
+      213: -7986618853627468452
+    second: Pour_131
+  - first:
+      213: 4870397997861273366
+    second: Pour_132
+  - first:
+      213: 5956427618384183733
+    second: Pour_133
+  - first:
+      213: -4714493445495429497
+    second: Pour_134
+  - first:
+      213: 8756468369442264911
+    second: Pour_135
+  - first:
+      213: 9022865225168821558
+    second: Pour_136
+  - first:
+      213: 1705755363322286246
+    second: Pour_137
+  - first:
+      213: 376929697558128033
+    second: Pour_138
+  - first:
+      213: 1604326169780402516
+    second: Pour_139
+  - first:
+      213: 5027250487118299316
+    second: Pour_140
+  - first:
+      213: -4223641096305743636
+    second: Pour_141
+  - first:
+      213: -777569798580067673
+    second: Pour_142
+  - first:
+      213: 95790068214508791
+    second: Pour_143
+  - first:
+      213: 2535896651774137958
+    second: Pour_144
+  - first:
+      213: 6170866607586825433
+    second: Pour_145
+  - first:
+      213: -3810468153070987107
+    second: Pour_146
+  - first:
+      213: -4932647403846961760
+    second: Pour_147
+  - first:
+      213: -6025340047596086308
+    second: Pour_148
+  - first:
+      213: -8541822820042961168
+    second: Pour_149
+  - first:
+      213: -4036608632291567732
+    second: Pour_150
+  - first:
+      213: 7912638804744996026
+    second: Pour_151
+  - first:
+      213: 6687938888526838937
+    second: Pour_152
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +500,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +534,2952 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pour_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9066
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a9324d359a98e00800000000000000
+      internalID: 1047554565846833672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_1
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 9066
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f508b5731f75d730800000000000000
+      internalID: 4023261563681506803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_2
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 9066
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5e17125c20c6600800000000000000
+      internalID: 462747907405243844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_3
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 9066
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a34c3668152f3120800000000000000
+      internalID: 2395674313509061543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_4
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 9066
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5beebe9d57aabdd0800000000000000
+      internalID: -2469477425122186406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_5
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 9066
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fac97114946a960800000000000000
+      internalID: 7612852764034248466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_6
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 9066
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee5f11c846b9c880800000000000000
+      internalID: -8590134390638551324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_7
+      rect:
+        serializedVersion: 2
+        x: 5894
+        y: 9066
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20feea164ced67db0800000000000000
+      internalID: -4794399818255503614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_8
+      rect:
+        serializedVersion: 2
+        x: 6736
+        y: 9066
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b87b9e5ca948f810800000000000000
+      internalID: 1799269055804962994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_9
+      rect:
+        serializedVersion: 2
+        x: 7578
+        y: 9066
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237dbc1ad427fba00800000000000000
+      internalID: 774463338683553586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_10
+      rect:
+        serializedVersion: 2
+        x: 8420
+        y: 9066
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efe351a4d707edb0800000000000000
+      internalID: -4762829471099916313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_11
+      rect:
+        serializedVersion: 2
+        x: 9262
+        y: 9066
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e546482b6a610f0800000000000000
+      internalID: -1146545769463652839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8244
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88dfe1b8f3e2ff60800000000000000
+      internalID: 8066760539850659980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_13
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 8244
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59194110bfc2c7c70800000000000000
+      internalID: 8970094014381724053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_14
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 8244
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a1c25944aa53f70800000000000000
+      internalID: 9166419828119706130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_15
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 8244
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e77702d0f7410360800000000000000
+      internalID: 7134062384373004257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_16
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 8244
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd1ea021f37ec6e0800000000000000
+      internalID: -1815386120311136833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_17
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 8244
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fe34f10148a7440800000000000000
+      internalID: 4934401546516688651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_18
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 8244
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8b576286e5809e0800000000000000
+      internalID: -1654969061643798345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_19
+      rect:
+        serializedVersion: 2
+        x: 5894
+        y: 8244
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc2c402c95185500800000000000000
+      internalID: 385081528441122012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_20
+      rect:
+        serializedVersion: 2
+        x: 6736
+        y: 8244
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9681ade98a27bf5e0800000000000000
+      internalID: -1874778751324514199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_21
+      rect:
+        serializedVersion: 2
+        x: 7578
+        y: 8244
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cd85cd4a8aa3ed0800000000000000
+      internalID: -2433447222615417769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_22
+      rect:
+        serializedVersion: 2
+        x: 8420
+        y: 8244
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8324bb8d1f95cc0800000000000000
+      internalID: -3721677703888095041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_23
+      rect:
+        serializedVersion: 2
+        x: 9262
+        y: 8244
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b977fb9e623979840800000000000000
+      internalID: 5230811287553800091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7422
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075ecc012e1bdd820800000000000000
+      internalID: 2944705315872761200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_25
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 7422
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb79752cd70f32e0800000000000000
+      internalID: -2143986255502148662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_26
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 7422
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6fcc20eb57024f40800000000000000
+      internalID: 5711135368643661677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_27
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 7422
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025444b948a601870800000000000000
+      internalID: 8651532001951892768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_28
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 7422
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84f1f24569233380800000000000000
+      internalID: -8992798516037159795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_29
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 7422
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00b3ecafd4d2cda0800000000000000
+      internalID: -5925940102522753014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_30
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 7422
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e01592a4275e8c0800000000000000
+      internalID: -3970641833610899905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_31
+      rect:
+        serializedVersion: 2
+        x: 5894
+        y: 7422
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1c30a37e0dfbcf0800000000000000
+      internalID: -234238964070628924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_32
+      rect:
+        serializedVersion: 2
+        x: 6736
+        y: 7422
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa6f226884df7fc0800000000000000
+      internalID: -3494841103588300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_33
+      rect:
+        serializedVersion: 2
+        x: 7578
+        y: 7422
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3206d5d41c28bf980800000000000000
+      internalID: -8504059704620785629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_34
+      rect:
+        serializedVersion: 2
+        x: 8420
+        y: 7422
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83515513e8f30d230800000000000000
+      internalID: 3661496376997778744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_35
+      rect:
+        serializedVersion: 2
+        x: 9262
+        y: 7422
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8feaf7f5acdcf83d0800000000000000
+      internalID: -3202114540967842056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6600
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4894bac101a609c00800000000000000
+      internalID: 905340142534478212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_37
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 6600
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a016966431bfb1620800000000000000
+      internalID: 2746064458016710922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_38
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 6600
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25a7cf1bc77b6640800000000000000
+      internalID: 5074281119458239790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_39
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 6600
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f05eeaabc5426030800000000000000
+      internalID: 3486425802586607865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_40
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 6600
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d14d67f9fd011e0800000000000000
+      internalID: -2229035939561988818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_41
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 6600
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9e77673855a8590800000000000000
+      internalID: -7671224992155571784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_42
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 6600
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cfa7297576547b60800000000000000
+      internalID: 7742908721900531650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_43
+      rect:
+        serializedVersion: 2
+        x: 5894
+        y: 6600
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c17446c23d6f730800000000000000
+      internalID: 4032642703971261576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_44
+      rect:
+        serializedVersion: 2
+        x: 6736
+        y: 6600
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3796aa771010471e0800000000000000
+      internalID: -2201133212063078029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_45
+      rect:
+        serializedVersion: 2
+        x: 7578
+        y: 6600
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1ddd5306915ae00800000000000000
+      internalID: 1055277588699533813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_46
+      rect:
+        serializedVersion: 2
+        x: 8420
+        y: 6600
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a834f5efe222e55e0800000000000000
+      internalID: -1919058805981756534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_47
+      rect:
+        serializedVersion: 2
+        x: 9262
+        y: 6600
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1262dc4d0bbddf5d0800000000000000
+      internalID: -3027021821992163807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5778
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0eb4fedc6953a620800000000000000
+      internalID: 2784167318777019918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_49
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 5778
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e110b39f3089e190800000000000000
+      internalID: -7932668258087333403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_50
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 5778
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ad6aa67d31475d0800000000000000
+      internalID: -3065803630404248949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_51
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 5778
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6582106964afaf010800000000000000
+      internalID: 1223565429855823958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_52
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 5778
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dce20106957cab30800000000000000
+      internalID: 4299941031354494166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_53
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 5778
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e246702b9393e30800000000000000
+      internalID: 4483678340815007305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_54
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 5778
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c254b378f08656440800000000000000
+      internalID: 4928459783129482540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_55
+      rect:
+        serializedVersion: 2
+        x: 5894
+        y: 5778
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a83a3e84127ad90800000000000000
+      internalID: -7086658891703678414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_56
+      rect:
+        serializedVersion: 2
+        x: 6736
+        y: 5778
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583aff7b5991aedd0800000000000000
+      internalID: -2456122515949378683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_57
+      rect:
+        serializedVersion: 2
+        x: 7578
+        y: 5778
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7459ed2d62a00c0800000000000000
+      internalID: -4608828581540968516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_58
+      rect:
+        serializedVersion: 2
+        x: 8420
+        y: 5778
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8542a6bb048bbefa0800000000000000
+      internalID: -5770315909383445416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_59
+      rect:
+        serializedVersion: 2
+        x: 9262
+        y: 5778
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32a3af647f0929f0800000000000000
+      internalID: -492845691456740804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4956
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6b6cbb68d410830800000000000000
+      internalID: 4035591982171993781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_61
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 4956
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64bdbfa90560d810800000000000000
+      internalID: 1788040144343643243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_62
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 4956
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78c16e67f5b6eb60800000000000000
+      internalID: 7775101881015191679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_63
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 4956
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2325eb246f72ef0800000000000000
+      internalID: -132866897462807847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_64
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 4956
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08913ed8561352870800000000000000
+      internalID: 8657380170931575168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_65
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 4956
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64291db211acd6b50800000000000000
+      internalID: 6588144005011313222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_66
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 4956
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf065f6ded4d71b0800000000000000
+      internalID: -5657279874736975906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_67
+      rect:
+        serializedVersion: 2
+        x: 5894
+        y: 4956
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7ba58b47b776e60800000000000000
+      internalID: 7955463008012646363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_68
+      rect:
+        serializedVersion: 2
+        x: 6736
+        y: 4956
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16265c3d57e25d3b0800000000000000
+      internalID: -5488429487282101663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_69
+      rect:
+        serializedVersion: 2
+        x: 7578
+        y: 4956
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d57184a7205c85a0800000000000000
+      internalID: -6517746429518055983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_70
+      rect:
+        serializedVersion: 2
+        x: 8420
+        y: 4956
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9578af5575df2af40800000000000000
+      internalID: 5738427426769897305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_71
+      rect:
+        serializedVersion: 2
+        x: 9262
+        y: 4956
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d140f81d9e1ccb970800000000000000
+      internalID: 8772099384198235165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4134
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b231fcd7dc94c5b0800000000000000
+      internalID: -5348978006470610253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_73
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 4134
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be1d4608fe678840800000000000000
+      internalID: 5226267904123412147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_74
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 4134
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3c4714f40119d30800000000000000
+      internalID: 4436345040523281336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_75
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 4134
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fc90acee40a1200800000000000000
+      internalID: 151438961108701012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_76
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 4134
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1241d35be0591b5c0800000000000000
+      internalID: -4201413086957202399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_77
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 4134
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e9132fc80dd2260800000000000000
+      internalID: 7074539893446254178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_78
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 4134
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ab811c9b3ea6a50800000000000000
+      internalID: 6515270197892921954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_79
+      rect:
+        serializedVersion: 2
+        x: 5894
+        y: 4134
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e1beade27d36e90800000000000000
+      internalID: -7033541596781273549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_80
+      rect:
+        serializedVersion: 2
+        x: 6736
+        y: 4134
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce2cf5ca65a12790800000000000000
+      internalID: -7556576821744226616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_81
+      rect:
+        serializedVersion: 2
+        x: 7578
+        y: 4134
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d87f7e49231a5870800000000000000
+      internalID: 8672265100586875090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_82
+      rect:
+        serializedVersion: 2
+        x: 8420
+        y: 4134
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5efdf9f38bff352b0800000000000000
+      internalID: -5596848745084887067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_83
+      rect:
+        serializedVersion: 2
+        x: 9262
+        y: 4134
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb45e51128a633db0800000000000000
+      internalID: -4813386469859240769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3312
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2cbe053a69280f0800000000000000
+      internalID: -1116164129452997966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_85
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 3312
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ec301b61005aab0800000000000000
+      internalID: -4997588114038600122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_86
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 3312
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27327c5078def8270800000000000000
+      internalID: 8255077806166713202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_87
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 3312
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a70a51c181e5b6d0800000000000000
+      internalID: -2975224031397410908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_88
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 3312
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc98c718d7fa73de0800000000000000
+      internalID: -1353420209423349301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_89
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 3312
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e876a13ceebe4c060800000000000000
+      internalID: 6972957533784401806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_90
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 3312
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5897a54ebf48839e0800000000000000
+      internalID: -1641415846773753467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_91
+      rect:
+        serializedVersion: 2
+        x: 5894
+        y: 3312
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885a9410497f6ccb0800000000000000
+      internalID: -4843912134141565560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_92
+      rect:
+        serializedVersion: 2
+        x: 6736
+        y: 3312
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a05c91371d53d20800000000000000
+      internalID: 3257740197756209821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_93
+      rect:
+        serializedVersion: 2
+        x: 7578
+        y: 3312
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36a9e4ddbc44ec20800000000000000
+      internalID: 3234794810563470911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_94
+      rect:
+        serializedVersion: 2
+        x: 8420
+        y: 3312
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e194d90f3249db570800000000000000
+      internalID: 8484100155117488414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_95
+      rect:
+        serializedVersion: 2
+        x: 9262
+        y: 3312
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1147be359d5ad6d40800000000000000
+      internalID: 5579297866216338449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2490
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4a537b4db1006f0800000000000000
+      internalID: -720545339958516534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_97
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 2490
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7acf36843392100800000000000000
+      internalID: 83654454091229119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_98
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 2490
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf17df74f30a9bf0800000000000000
+      internalID: -316936475124490298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_99
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 2490
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa2381cd40b592b0800000000000000
+      internalID: -5578358715422922066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_100
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 2490
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6448d95c70669a650800000000000000
+      internalID: 6244634541892142150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_101
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 2490
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc94d1aa393eeef50800000000000000
+      internalID: 6912712701414033867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_102
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 2490
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1025db160aa2830b0800000000000000
+      internalID: -5748798056015506943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_103
+      rect:
+        serializedVersion: 2
+        x: 5894
+        y: 2490
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f746bcefd5539ab0800000000000000
+      internalID: -5002560340841052176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_104
+      rect:
+        serializedVersion: 2
+        x: 6736
+        y: 2490
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7201e88f577af0c80800000000000000
+      internalID: -8354274658625908697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_105
+      rect:
+        serializedVersion: 2
+        x: 7578
+        y: 2490
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587ea748a9f524930800000000000000
+      internalID: 4125965325877045125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_106
+      rect:
+        serializedVersion: 2
+        x: 8420
+        y: 2490
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c081cf94b19064dc0800000000000000
+      internalID: -3655224034754553844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_107
+      rect:
+        serializedVersion: 2
+        x: 9262
+        y: 2490
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e1f263ae73ced80800000000000000
+      internalID: -8220133740787065329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1668
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac5e327f6e566880800000000000000
+      internalID: -8618097004175795027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_109
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1668
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aea2c7dc9d15a390800000000000000
+      internalID: -7807801819504922969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_110
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 1668
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee66d12b99d54ae60800000000000000
+      internalID: 7972600155052271342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_111
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 1668
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55e8d423ae6cae00800000000000000
+      internalID: 1057341659502142811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_112
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 1668
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e607452c4e64fc80800000000000000
+      internalID: -8289879740760258846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_113
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 1668
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d2bcebd7bae8270800000000000000
+      internalID: 8254723723576946030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_114
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 1668
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da94ce161af6d89a0800000000000000
+      internalID: -6229199970660234835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_115
+      rect:
+        serializedVersion: 2
+        x: 5894
+        y: 1668
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ade72b9563942e0800000000000000
+      internalID: -2141120388963313120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_116
+      rect:
+        serializedVersion: 2
+        x: 6736
+        y: 1668
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9d1d09691ff6620800000000000000
+      internalID: 2769697924833204640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_117
+      rect:
+        serializedVersion: 2
+        x: 7578
+        y: 1668
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83184b0f1df6b690800000000000000
+      internalID: -7586598212483935348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_118
+      rect:
+        serializedVersion: 2
+        x: 8420
+        y: 1668
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e977106f35ee239b0800000000000000
+      internalID: -5101753383480363106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_119
+      rect:
+        serializedVersion: 2
+        x: 9262
+        y: 1668
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8bf8cab93e2d710800000000000000
+      internalID: 1716684665736116425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 846
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e6b450963bc62d0800000000000000
+      internalID: -3284052764618166698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_121
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 846
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2c93f60afa3fa20800000000000000
+      internalID: 3095010472529347303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_122
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 846
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4452ed6ce9bb13c20800000000000000
+      internalID: 3184532702143325508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_123
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 846
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23bc6533bf620120800000000000000
+      internalID: 2378586368691188523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_124
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 846
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d1848e13d81e190800000000000000
+      internalID: -7934905822960149167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_125
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 846
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e02325114860d70800000000000000
+      internalID: 9009033314529578531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_126
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 846
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2359bed9f9cb6f760800000000000000
+      internalID: 7491382423912682802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_127
+      rect:
+        serializedVersion: 2
+        x: 5894
+        y: 846
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155a11c3874027ba0800000000000000
+      internalID: -6092802431428483759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_128
+      rect:
+        serializedVersion: 2
+        x: 6736
+        y: 846
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbc655a7a965f7d0800000000000000
+      internalID: -2885283817506550830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_129
+      rect:
+        serializedVersion: 2
+        x: 7578
+        y: 846
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c21c7edbdb80de0800000000000000
+      internalID: -1366633863572280316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_130
+      rect:
+        serializedVersion: 2
+        x: 8420
+        y: 846
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ac5d7dd1dbc17a0800000000000000
+      internalID: -6405036634154874293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_131
+      rect:
+        serializedVersion: 2
+        x: 9262
+        y: 846
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55e811b774d92190800000000000000
+      internalID: -7986618853627468452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f7b41bc21279340800000000000000
+      internalID: 4870397997861273366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_133
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 24
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b18d144c5b79a250800000000000000
+      internalID: 5956427618384183733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_134
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 24
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78666559031c29eb0800000000000000
+      internalID: -4714493445495429497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_135
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 24
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47dc879699358970800000000000000
+      internalID: 8756468369442264911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_136
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 24
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d996afd18a73d70800000000000000
+      internalID: 9022865225168821558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_137
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 24
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0da88277f0ca710800000000000000
+      internalID: 1705755363322286246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pour_138
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 24
+        width: 842
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a56f38109f1b3500800000000000000
+      internalID: 376929697558128033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
