@@ -9,11 +9,11 @@ public class CustomerController : MonoBehaviour
     public int timer;
 
     [Header("Error Calculation")]
-    [SerializeField] int errorThreshold = 30;
+    [SerializeField] int errorThreshold = 20;
 
     [Header("UI Display")]
     [SerializeField] SpriteRenderer timerIcon;
-    [SerializeField] IngredientList ingredientList;
+    [SerializeField] IngredientList orangeDrink;
     private Color iconColor = Color.green;
 
     private Drink targDrink;
@@ -24,12 +24,14 @@ public class CustomerController : MonoBehaviour
     {
         timer = startingTimer;
         timerIcon.color = iconColor;
+        // orangeDrink.DisplayIngredient("strawberry", 1);
         InvokeRepeating("HandleTimer", 0, 1); 
     } 
 
-    void DisplayRecipe()
+    void DisplayRecipe()  // WIP - do not use
     {
-        IngredientList ing = Object.Instantiate(ingredientList);
+        Vector3 pos = new Vector3();
+        IngredientList ing = Object.Instantiate(orangeDrink);
         ing.DisplayIngredient("ice", 1);
     }
 
