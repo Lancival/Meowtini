@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class DrinkGenerator : MonoBehaviour
 {
-    [SerializeField] GameObject drinkTemplate;
-    public static Drink GenerateDrink(Drink result, int difficulty)
+    [SerializeField] GameObject target;
+    Drink result;
+
+    private void Awake()
+    {
+        result = target.GetComponent<Drink>();
+        // GenerateDrink(3);
+    }
+    public static void GenerateDrink(Drink result, int difficulty)
     {
         List<string> toppingList = new List<string>() { "cherry", "strawberry", "olive", "mint", "cream", "lime" };
 
@@ -47,7 +54,5 @@ public class DrinkGenerator : MonoBehaviour
             result.toppings.Add(toppingList[index], 1);
             toppingList.RemoveAt(index);
         }
-
-        return result;
     }
 }

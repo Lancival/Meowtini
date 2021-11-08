@@ -40,9 +40,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
+  - name: Drink
+    uniqueID: 1279693373
     locked: 0
   - name: Heart
     uniqueID: 1525939407
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0

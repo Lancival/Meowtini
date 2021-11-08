@@ -17,8 +17,7 @@ public class CustomerController : MonoBehaviour
     [SerializeField] SpriteMask mask;
     private Color iconColor = Color.green;
 
-    [SerializeField] Drink targDrink;
-
+    [SerializeField] public Drink targDrink;
 
     // Start is called before the first frame update
     void Start()
@@ -26,16 +25,15 @@ public class CustomerController : MonoBehaviour
         timer = startingTimer;
         timerIcon.color = iconColor;
         // orangeDrink.DisplayIngredient("strawberry", 1);
+        DrinkGenerator.GenerateDrink(targDrink, 3);
         InvokeRepeating("HandleTimer", 0, 1);
-        targDrink = DrinkGenerator.GenerateDrink(targDrink, 3);  // Needs to reference GameManager for difficulty
-        // targDrink.PrintInfo();  // For debugging
+        
+        targDrink.PrintInfo();  // For debugging
     } 
 
     void DisplayRecipe()  // WIP - do not use
     {
-        Vector3 pos = new Vector3();
-        IngredientList ing = Object.Instantiate(orangeDrink);
-        ing.DisplayIngredient("ice", 1);
+        
     }
 
     // Judges if the candidate matches the target sufficiently
@@ -115,8 +113,8 @@ public class CustomerController : MonoBehaviour
 
     private void Update()
     {
-        float yVal = Mathf.Lerp(timerIcon.transform.position.y + 0.93f, timerIcon.transform.position.y + 0.13f, timer / startingTimer);
-        mask.transform.position = new Vector3(timerIcon.transform.position.x, Mathf.Lerp(mask.transform.position.y, yVal, 0.6f));
+        float yVal = Mathf.Lerp(timerIcon.transform.position.y + 0.13f, timerIcon.transform.position.y + 0.93f, (float) timer / startingTimer);
+        mask.transform.position = new Vector3(timerIcon.transform.position.x, Mathf.Lerp(mask.transform.position.y, yVal, 1f), 0);
     }
 
     // Updates the time
