@@ -38,7 +38,7 @@ public class Drink : MonoBehaviour
     public CupShapes cupShape;
 
 
-    void Start()
+    void Awake()
     {
         toppingSprites = new Dictionary<string, SpriteRenderer>();
         toppingSprites.Clear();

@@ -17,7 +17,14 @@ public class CustomerController : MonoBehaviour
     [SerializeField] SpriteMask mask;
     private Color iconColor = Color.green;
 
-    [SerializeField] public Drink targDrink;
+    [Header("Cups")]
+    [SerializeField] GameObject cup0;  // Corresponds to cup0 prefab
+    [SerializeField] GameObject cup1;  // Corr: cup1 prefab
+    [SerializeField] GameObject cup2;  // Corr: cup2 prefab
+    Drink targDrink;
+
+    [Header("Generator")]
+    [SerializeField] DrinkGenerator gen;
 
     // Start is called before the first frame update
     void Start()
@@ -25,15 +32,25 @@ public class CustomerController : MonoBehaviour
         timer = startingTimer;
         timerIcon.color = iconColor;
         // orangeDrink.DisplayIngredient("strawberry", 1);
-        DrinkGenerator.GenerateDrink(targDrink, 3);
         InvokeRepeating("HandleTimer", 0, 1);
-        
-        targDrink.PrintInfo();  // For debugging
+        ChooseCup();
+        // targDrink.PrintInfo();  // For debugging
     } 
 
-    void DisplayRecipe()  // WIP - do not use
+    void ChooseCup()  // WIP - do not use
     {
-        
+        switch(gen.cupShape)
+        {
+            case 0:  // funnel (cup2)
+                targDrink = cup2.GetComponent<Drink>();
+                break;
+            case 1:  // cylinder (cup1)
+                targDrink = cup1.GetComponent<Drink>();
+                break;
+            case 2:  // flask (cup0)
+                targDrink = cup0.GetComponent<Drink>();
+                break;
+        }
     }
 
     // Judges if the candidate matches the target sufficiently

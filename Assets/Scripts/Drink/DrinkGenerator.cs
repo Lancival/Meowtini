@@ -4,20 +4,38 @@ using UnityEngine;
 
 public class DrinkGenerator : MonoBehaviour
 {
-    [SerializeField] GameObject target;
+    [SerializeField] GameObject cup0;  // Corresponds to cup0 prefab
+    [SerializeField] GameObject cup1;  // Corr: cup1 prefab
+    [SerializeField] GameObject cup2;  // Corr: cup2 prefab
     Drink result;
+    public int cupShape;
 
     private void Awake()
     {
-        result = target.GetComponent<Drink>();
-        // GenerateDrink(3);
+        GenerateDrink(3);  // Reference difficulty
     }
-    public static void GenerateDrink(Drink result, int difficulty)
+    public void GenerateDrink(int difficulty)
     {
         List<string> toppingList = new List<string>() { "cherry", "strawberry", "olive", "mint", "cream", "lime" };
 
-        // Set cup shape
+        // Set cup shape & activate cup
         int state = Mathf.RoundToInt(Random.Range(0f, 2f));  // Random int from 0-2 inclusive
+        cupShape = state;
+        switch (cupShape)
+        {
+            case 0:  // funnel (cup2)
+                cup2.SetActive(true);
+                result = cup2.GetComponent<Drink>();
+                break;
+            case 1:  // cylinder (cup1)
+                cup1.SetActive(true);
+                result = cup1.GetComponent<Drink>();
+                break;
+            case 2:  // flask (cup0)
+                cup0.SetActive(true);
+                result = cup0.GetComponent<Drink>();
+                break;
+        }
         result.SetCupShape(state);
         // Set liquid requirement
         state = Mathf.RoundToInt(Random.Range(0f, 2f));  // Rerolls the int
