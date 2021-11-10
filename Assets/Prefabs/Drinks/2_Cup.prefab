@@ -948,6 +948,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   capacity: 0
   curVolume: 0
+  cream: {fileID: 8316714254914591833}
+  cherry: {fileID: 8197368278804151351}
+  ice0: {fileID: 5185023893314448837}
+  ice1: {fileID: 5185023892388266795}
+  ice2: {fileID: 5185023891519769567}
+  strawberry: {fileID: 2941386571249521863}
+  mint: {fileID: 7990511841540302013}
+  olive: {fileID: 5925679108709949003}
+  lime: {fileID: 5185023892632045742}
   cupShape: 0
 --- !u!114 &5185023893520800049
 MonoBehaviour:
