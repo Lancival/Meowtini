@@ -974,7 +974,7 @@ MonoBehaviour:
   animLiquid: {fileID: 5185023891935208466}
   drink: {fileID: 0}
   shaker: {fileID: 0}
-  liquidSpriteRenderer: {fileID: 0}
+  liquidSpriteRenderer: {fileID: 5185023891935208465}
 --- !u!1 &7621712091806055536
 GameObject:
   m_ObjectHideFlags: 0

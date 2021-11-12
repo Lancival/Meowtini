@@ -18,6 +18,8 @@ public class Drink : MonoBehaviour
 
     Dictionary<string, SpriteRenderer> toppingSprites;
 
+    // All drinks active in the scene
+    public static readonly HashSet<Drink> Pool;
     [Header("Components")]
     [SerializeField] SpriteRenderer cream;
     [SerializeField] SpriteRenderer cherry;
@@ -49,11 +51,23 @@ public class Drink : MonoBehaviour
         toppings.Clear();
     }
 
+    // Gets called everytime the drink is activated
+    private void OnEnable()
+    {
+        Drink.Pool.Add(this);
+    }
+
+    // Gets called everytime the drink is deactivated
+    private void OnDisable()
+    {
+        Drink.Pool.Remove(this);
+    }
+    
     private void FixedUpdate()
     {
         DisplayDrink();
     }
-
+    
     void SetSprites()
     {
         toppingSprites.Add("cream", cream);
@@ -69,6 +83,23 @@ public class Drink : MonoBehaviour
         {
             toppingSprites[elem].enabled = false;
         }
+    }
+
+    public static Drink FindClosestDrink(Vector3 pos)
+    {
+        Drink result = null;
+        float dist = float.PositiveInfinity;
+        var e = Drink.Pool.GetEnumerator();
+        while(e.MoveNext())
+        {
+            float d = (e.Current.transform.position - pos).sqrMagnitude;
+            if(d < dist)
+            {
+                result = e.Current;
+                dist = d;
+            }
+        }
+        return result;
     }
 
     public void SetCupShape(CupShapes shape)

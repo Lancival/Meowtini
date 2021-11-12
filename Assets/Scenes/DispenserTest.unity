@@ -570,6 +570,11 @@ Transform:
   m_Father: {fileID: 1319172622}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -120.465}
+--- !u!212 &1926061599 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5185023891935208465, guid: f74fe11bc85801f40b56228684dd0359, type: 3}
+  m_PrefabInstance: {fileID: 5185023893046007384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2090163910
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +743,10 @@ PrefabInstance:
       propertyPath: liquidSprites
       value: 
       objectReference: {fileID: 2090163911}
+    - target: {fileID: 5185023893520800049, guid: f74fe11bc85801f40b56228684dd0359, type: 3}
+      propertyPath: liquidSpriteRenderer
+      value: 
+      objectReference: {fileID: 1926061599}
     - target: {fileID: 5185023893520800062, guid: f74fe11bc85801f40b56228684dd0359, type: 3}
       propertyPath: m_Name
       value: 2_Cup

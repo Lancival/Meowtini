@@ -17,7 +17,6 @@ public class DrinkAnimation : MonoBehaviour
         liquidSprites = FindObjectOfType<LiquidSprites>();
         shaker = FindObjectOfType<Shaker>();
         drink = GetComponent<Drink>();
-
         if (liquidSpriteRenderer == null)
         {
             Debug.LogError("Don't forget to assign liquid sprite renderer!");
