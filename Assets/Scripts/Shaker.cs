@@ -87,4 +87,20 @@ public class Shaker : MonoBehaviour
         else
             shakerCap.SetActive(true);
     }
+
+    public void ActivateCupAnimation()
+    {
+        // Get closest drink
+        Drink drink = Drink.FindClosestDrink(this.transform.position);
+        
+        if (drink != null)
+        {
+            Animator liquid = drink.GetComponentInChildren<Animator>();
+            if (liquid == null)
+            {
+                Debug.LogError("Expected animator for the liquid GameObject");
+            }
+            liquid.SetTrigger("Fill");
+        }
+    }
 }

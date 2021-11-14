@@ -19,7 +19,8 @@ public class Drink : MonoBehaviour
     Dictionary<string, SpriteRenderer> toppingSprites;
 
     // All drinks active in the scene
-    public static readonly HashSet<Drink> Pool;
+    public static HashSet<Drink> Pool = new HashSet<Drink>();
+
     [Header("Components")]
     [SerializeField] SpriteRenderer cream;
     [SerializeField] SpriteRenderer cherry;
