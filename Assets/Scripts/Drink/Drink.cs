@@ -17,6 +17,7 @@ public class Drink : MonoBehaviour
     public float curVolume = 0; // Current volume of the drink
 
     Dictionary<string, SpriteRenderer> toppingSprites;
+    Dictionary<string, SpriteRenderer> liquidSprites;
 
     // All drinks active in the scene
     public static HashSet<Drink> Pool = new HashSet<Drink>();
@@ -32,6 +33,12 @@ public class Drink : MonoBehaviour
     [SerializeField] SpriteRenderer olive;
     [SerializeField] SpriteRenderer lime;
 
+    [Header("Liquid Masks")]
+    [SerializeField] SpriteRenderer purple;
+    [SerializeField] SpriteRenderer orange;
+    [SerializeField] SpriteRenderer clear;
+    [SerializeField] SpriteRenderer blue;
+
     public enum CupShapes
     {
         funnel,
@@ -45,6 +52,8 @@ public class Drink : MonoBehaviour
     {
         toppingSprites = new Dictionary<string, SpriteRenderer>();
         toppingSprites.Clear();
+        liquidSprites = new Dictionary<string, SpriteRenderer>();
+        liquidSprites.Clear();
         SetSprites();
         liquids = new Dictionary<string, float>();
         liquids.Clear();
@@ -83,6 +92,14 @@ public class Drink : MonoBehaviour
         foreach (string elem in toppingSprites.Keys)
         {
             toppingSprites[elem].enabled = false;
+        }
+        liquidSprites.Add("purple", purple);
+        liquidSprites.Add("orange", orange);
+        liquidSprites.Add("clear", clear);
+        liquidSprites.Add("blue", blue);
+        foreach(string elem in liquidSprites.Keys)
+        {
+            liquidSprites[elem].enabled = false;
         }
     }
 
@@ -139,6 +156,12 @@ public class Drink : MonoBehaviour
     }
     public void DisplayDrink()
     {
+        // Liquid
+        foreach(string liquid in liquids.Keys)
+        {
+            liquidSprites[liquid].enabled = true;
+        }
+        // Toppings
         foreach(string topping in toppings.Keys)
         {
             if (topping == "ice")
