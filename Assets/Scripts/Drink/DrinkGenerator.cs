@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class DrinkGenerator : MonoBehaviour
@@ -7,9 +8,11 @@ public class DrinkGenerator : MonoBehaviour
     [SerializeField] GameObject cup0;  // Corresponds to cup0 prefab
     [SerializeField] GameObject cup1;  // Corr: cup1 prefab
     [SerializeField] GameObject cup2;  // Corr: cup2 prefab
+    [SerializeField] Image coldness; // Corr; Coldness object
+    [SerializeField] SpriteList sprites;
     Drink result;
     public int cupShape;
-
+    int numIce;
     private void Awake()
     {
         GenerateDrink(3);  // Reference difficulty
@@ -52,7 +55,7 @@ public class DrinkGenerator : MonoBehaviour
                 break;
         }
         // Assign ice cubes based on difficulty
-        int numIce = 0;
+        numIce = 0;
         if (difficulty > 3)
         {
             numIce = Mathf.RoundToInt(Random.Range(0f, 3f));
@@ -73,4 +76,30 @@ public class DrinkGenerator : MonoBehaviour
             toppingList.RemoveAt(index);
         }
     }
+
+    private void Start()
+    {
+        // Display UI indicator for ice (coldness)
+        switch (numIce)
+        {
+            case 0:
+                coldness.enabled = false;
+                break;
+            case 1:
+                coldness.enabled = true;
+                coldness.sprite = sprites.GetSprite("cold1");
+                break;
+            case 2:
+                coldness.enabled = true;
+                coldness.sprite = sprites.GetSprite("cold2");
+                break;
+            case 3:
+                coldness.enabled = true;
+                coldness.sprite = sprites.GetSprite("cold3");
+                break;
+        }
+    }
 }
+
+
+

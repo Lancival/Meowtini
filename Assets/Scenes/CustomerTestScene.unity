@@ -1150,6 +1150,8 @@ MonoBehaviour:
   cup0: {fileID: 1285030983}
   cup1: {fileID: 207571925}
   cup2: {fileID: 1534441924}
+  coldness: {fileID: 1285091889}
+  sprites: {fileID: 1417376704}
   cupShape: 0
 --- !u!4 &602825962
 Transform:
@@ -2557,7 +2559,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.06, y: 0.04}
   m_SizeDelta: {x: 3, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1285091889
