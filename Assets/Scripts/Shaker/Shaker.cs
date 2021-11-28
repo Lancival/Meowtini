@@ -101,6 +101,9 @@ public class Shaker : MonoBehaviour
         
         if (drink != null)
         {
+            // Set volume back to 0
+            curVolume = 0;
+            
             Animator liquid = drink.GetComponentInChildren<Animator>();
             if (liquid == null)
             {
