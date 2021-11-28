@@ -30,7 +30,7 @@ public class CustomerController : MonoBehaviour
     void Start()
     {
         timer = startingTimer;
-        timerIcon.color = iconColor;
+        // timerIcon.color = iconColor;
         // orangeDrink.DisplayIngredient("strawberry", 1);
         InvokeRepeating("HandleTimer", 0, 1);
         ChooseCup();
