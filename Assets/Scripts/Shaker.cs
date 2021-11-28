@@ -20,6 +20,8 @@ public class Shaker : MonoBehaviour
     [Header("Shaker Cap")]
     [SerializeField] private GameObject shakerCap;
     
+    public bool canDropIce = false;
+
     void Start() {
         liquids = new Dictionary<string, float>();
         liquids.Clear();
@@ -28,7 +30,7 @@ public class Shaker : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag == "Ice")
         {
-            Debug.Log("Ice feature not implemented");
+            canDropIce = true;
         }
         if (other.gameObject.tag == "Dispenser")
         {
@@ -41,6 +43,10 @@ public class Shaker : MonoBehaviour
     }
 
     private void OnTriggerExit2D(Collider2D other) {
+        if (other.gameObject.tag == "Ice")
+        {
+            canDropIce = false;
+        }
         if (other.gameObject.tag == "Dispenser")
         {
             Animator anim = other.gameObject.GetComponent<Animator>();

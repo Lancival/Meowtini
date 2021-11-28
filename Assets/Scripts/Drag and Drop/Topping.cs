@@ -45,33 +45,25 @@ public class Topping : MonoBehaviour
 
     void OnMouseUp()
     {
-        if (target != null)
+		// All toppings should be attached to drink, only ice is separate
+        if (target != null && !toppingName.Contains("ice"))
         {
     	   transform.position = target.transform.position;
-		   
-		   if (toppingName.Contains("ice"))
-		   {
-				// Special case for ice, which has 3 variants
-				if (target.toppings.ContainsKey("ice2"))
-				{
-					toppingName = "ice2";
-				}
-				else if (target.toppings.ContainsKey("ice1"))
-				{
-					toppingName = "ice2";
-				}
-				else if (target.toppings.ContainsKey("ice0"))
-				{
-					toppingName = "ice1";
-				}
-				else
-				{
-					toppingName = "ice0";
-				}
-		   }
-		   
            target.AddTopping(toppingName);
         }
+		else
+		{
+			// Dealing with ice, get reference to shaker--there should only be one
+			GameObject obj = GameObject.FindWithTag("Shaker");
+			Shaker shaker = obj.GetComponent<Shaker>();
+			if (shaker.canDropIce)
+			{
+				if (shaker.numIceCubes < 3)
+				{
+					shaker.numIceCubes++;
+				}
+			}
+		}
         Destroy(gameObject);
     }
 

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Drink
   - Dispenser
+  - Ice
+  - Shaker
   layers:
   - Default
   - TransparentFX
