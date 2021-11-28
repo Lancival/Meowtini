@@ -17,7 +17,7 @@ public class Drink : MonoBehaviour
     public float curVolume = 0; // Current volume of the drink
 
     Dictionary<string, SpriteRenderer> toppingSprites;
-    Dictionary<string, SpriteRenderer> liquidSprites;
+    Dictionary<string, Sprite> liquidSprites;
 
     // All drinks active in the scene
     public static HashSet<Drink> Pool = new HashSet<Drink>();
@@ -33,11 +33,12 @@ public class Drink : MonoBehaviour
     [SerializeField] SpriteRenderer olive;
     [SerializeField] SpriteRenderer lime;
 
-    [Header("Liquid Masks")]
-    [SerializeField] SpriteRenderer purple;
-    [SerializeField] SpriteRenderer orange;
-    [SerializeField] SpriteRenderer clear;
-    [SerializeField] SpriteRenderer blue;
+    [Header("Liquid")]
+    [SerializeField] SpriteRenderer liquidObject;
+    [SerializeField] Sprite purple;
+    [SerializeField] Sprite orange;
+    [SerializeField] Sprite clear;
+    [SerializeField] Sprite blue;
 
     public enum CupShapes
     {
@@ -47,18 +48,27 @@ public class Drink : MonoBehaviour
     }
     public CupShapes cupShape;
 
+    public enum LiquidTypes
+    {
+        purple,
+        orange,
+        clear,
+        blue
+    }
+
+    public LiquidTypes liquid;
+
 
     void Awake()
     {
         toppingSprites = new Dictionary<string, SpriteRenderer>();
         toppingSprites.Clear();
-        liquidSprites = new Dictionary<string, SpriteRenderer>();
+        liquidSprites = new Dictionary<string, Sprite>();
         liquidSprites.Clear();
         SetSprites();
-        liquids = new Dictionary<string, float>();
-        liquids.Clear();
         toppings = new Dictionary<string, int>();
         toppings.Clear();
+        liquid = LiquidTypes.clear;
     }
 
     // Gets called everytime the drink is activated
@@ -97,10 +107,6 @@ public class Drink : MonoBehaviour
         liquidSprites.Add("orange", orange);
         liquidSprites.Add("clear", clear);
         liquidSprites.Add("blue", blue);
-        foreach(string elem in liquidSprites.Keys)
-        {
-            liquidSprites[elem].enabled = false;
-        }
     }
 
     public static Drink FindClosestDrink(Vector3 pos)
@@ -157,9 +163,20 @@ public class Drink : MonoBehaviour
     public void DisplayDrink()
     {
         // Liquid
-        foreach(string liquid in liquids.Keys)
+        switch (liquid)
         {
-            liquidSprites[liquid].enabled = true;
+            case LiquidTypes.purple:
+                liquidObject.sprite = liquidSprites["purple"];
+                break;
+            case LiquidTypes.orange:
+                liquidObject.sprite = liquidSprites["orange"];
+                break;
+            case LiquidTypes.clear:
+                liquidObject.sprite = liquidSprites["clear"];
+                break;
+            case LiquidTypes.blue:
+                liquidObject.sprite = liquidSprites["blue"];
+                break;
         }
         // Toppings
         foreach(string topping in toppings.Keys)

@@ -427,6 +427,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 754761249}
     m_Modifications:
+    - target: {fileID: 5784110812152103599, guid: bb04b2e21ec2f324cba2680d7cdc0fff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975439820565473311, guid: bb04b2e21ec2f324cba2680d7cdc0fff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8156195523690997833, guid: bb04b2e21ec2f324cba2680d7cdc0fff, type: 3}
       propertyPath: m_Name
       value: 1_Cup
@@ -490,6 +498,14 @@ PrefabInstance:
     - target: {fileID: 8156195523690997835, guid: bb04b2e21ec2f324cba2680d7cdc0fff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813230204864968902, guid: bb04b2e21ec2f324cba2680d7cdc0fff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014226795544002106, guid: bb04b2e21ec2f324cba2680d7cdc0fff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb04b2e21ec2f324cba2680d7cdc0fff, type: 3}
@@ -681,9 +697,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1525939407
   m_SortingLayer: -1
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 136e449250f692f42958dd5de4589b12, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7756767, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -691,7 +707,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 2
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &284598434
 MonoBehaviour:
@@ -1939,11 +1955,13 @@ MonoBehaviour:
   mint: {fileID: 0}
   olive: {fileID: 0}
   lime: {fileID: 0}
+  liquidObject: {fileID: 0}
   purple: {fileID: 0}
   orange: {fileID: 0}
   clear: {fileID: 0}
   blue: {fileID: 0}
   cupShape: 0
+  liquid: 0
 --- !u!4 &888409963
 Transform:
   m_ObjectHideFlags: 0
@@ -3594,7 +3612,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.55, y: 3.48}
+  m_AnchoredPosition: {x: 1.14, y: -0.18}
   m_SizeDelta: {x: 11.734, y: 11.5236}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1847319744
@@ -3789,9 +3807,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1525939407
   m_SortingLayer: -1
-  m_SortingOrder: 5
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 136e449250f692f42958dd5de4589b12, type: 3}
-  m_Color: {r: 0.9137255, g: 0.54901963, b: 0.52156866, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7108164, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3799,7 +3817,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 1
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!1 &2018592120
 GameObject:

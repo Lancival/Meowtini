@@ -37,7 +37,7 @@ public class CustomerController : MonoBehaviour
         // targDrink.PrintInfo();  // For debugging
     } 
 
-    void ChooseCup()  // WIP - do not use
+    void ChooseCup()  
     {
         switch(gen.cupShape)
         {

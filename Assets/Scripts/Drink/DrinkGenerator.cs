@@ -42,13 +42,13 @@ public class DrinkGenerator : MonoBehaviour
         switch (state)  // Assign random liquid
         {
             case 0:
-                result.liquids.Add("orange", 0f);
+                result.liquid = Drink.LiquidTypes.orange;
                 break;
             case 1:
-                result.liquids.Add("purple", 0f);
+                result.liquid = Drink.LiquidTypes.purple;
                 break;
             case 2:
-                result.liquids.Add("blue", 0f);
+                result.liquid = Drink.LiquidTypes.blue;
                 break;
         }
         // Assign ice cubes based on difficulty
