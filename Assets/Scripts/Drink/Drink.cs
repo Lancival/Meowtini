@@ -19,6 +19,8 @@ public class Drink : MonoBehaviour
     Dictionary<string, SpriteRenderer> toppingSprites;
     Dictionary<string, Sprite> liquidSprites;
 
+    public bool isDisplay = true; // Setting for if the drink belongs to speech bubble or not
+
     // All drinks active in the scene
     public static HashSet<Drink> Pool = new HashSet<Drink>();
 
@@ -35,6 +37,7 @@ public class Drink : MonoBehaviour
 
     [Header("Liquid")]
     [SerializeField] SpriteRenderer liquidObject;
+    [SerializeField] SpriteRenderer liquidDisplay;
     [SerializeField] Sprite purple;
     [SerializeField] Sprite orange;
     [SerializeField] Sprite clear;
@@ -69,6 +72,11 @@ public class Drink : MonoBehaviour
         toppings = new Dictionary<string, int>();
         toppings.Clear();
         liquid = LiquidTypes.clear;
+        if (!isDisplay)
+        {
+            // Disable static sprite if not active
+            liquidDisplay.gameObject.SetActive(false);
+        }
     }
 
     // Gets called everytime the drink is activated
@@ -178,6 +186,12 @@ public class Drink : MonoBehaviour
                 liquidObject.sprite = liquidSprites["blue"];
                 break;
         }
+
+        if (isDisplay)
+        {
+            liquidDisplay.sprite = liquidObject.sprite;
+        }
+
         // Toppings
         foreach(string topping in toppings.Keys)
         {
