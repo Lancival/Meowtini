@@ -11,11 +11,13 @@ public class SceneController : MonoBehaviour
 
     [SerializeField] SpriteList sprites;
 
+    private bool inWorkstation;
 
     // Start is called before the first frame update
     void Start()
     {
         workstation.enabled = false;
+        inWorkstation = false;
     }
 
     // Update is called once per frame
@@ -23,13 +25,19 @@ public class SceneController : MonoBehaviour
     {
         if (workstation.enabled)
         {
+            inWorkstation = true;
             background.sprite = sprites.GetSprite("workstation");
         } else
         {
+            inWorkstation = false;
             background.sprite = sprites.GetSprite("counter");
         }
     }
 
-    
+    // Checks if current scene is workstation
+    public bool isInWorkstation()
+    {
+        return inWorkstation;
+    }
 
 }
