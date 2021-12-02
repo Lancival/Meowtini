@@ -1368,6 +1368,10 @@ PrefabInstance:
       propertyPath: liquidSpriteRenderer
       value: 
       objectReference: {fileID: 1926061599}
+    - target: {fileID: 5185023893520800050, guid: f74fe11bc85801f40b56228684dd0359, type: 3}
+      propertyPath: isDisplay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5185023893520800062, guid: f74fe11bc85801f40b56228684dd0359, type: 3}
       propertyPath: m_Name
       value: 2_Cup
@@ -1381,6 +1385,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2996639707164445677, guid: ee1aeec75302c94418fbee95e13bed5e, type: 3}
+      propertyPath: isDisplay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5238058881414504429, guid: ee1aeec75302c94418fbee95e13bed5e, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1744,6 +1752,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 207571926, guid: bb04b2e21ec2f324cba2680d7cdc0fff, type: 3}
+      propertyPath: isDisplay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8156195523690997833, guid: bb04b2e21ec2f324cba2680d7cdc0fff, type: 3}
       propertyPath: m_Name
       value: 1_Cup
