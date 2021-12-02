@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : GenericSingleton<GameManager>
-{   
+{
+    const float MAX_SATISFACTION = 100f;
+
     [Header("Difficulty Settings")]
         // Not sure whether this should be a discrete value
         // or a some continuous variable
@@ -21,8 +23,8 @@ public class GameManager : GenericSingleton<GameManager>
         [SerializeField] private int combo = 0;
 
     [Header("Total Satisfaction")]
-        [Tooltip("Satisfication level (lives)")]
-        [SerializeField] private int totalSatisfaction = 0;
+        [Tooltip("Satisfication level (percent)")]
+        [SerializeField] private float totalSatisfaction = 50f;
 
     // Update is called once per frame
     void Update()
@@ -30,8 +32,17 @@ public class GameManager : GenericSingleton<GameManager>
         timer += Time.deltaTime;
         secondsElapsed = (int)(timer % 60);
     }
-    
-    # region Serving Drinks
+
+    #region Getters
+
+    public float GetSatisfaction()
+    {
+        return totalSatisfaction;
+    }
+
+    #endregion
+
+    #region Serving Drinks
     public void DrinkAccepted(int amount)
     {
         IncreaseComboCounter();
@@ -50,7 +61,12 @@ public class GameManager : GenericSingleton<GameManager>
     #endregion
 
     # region Satisfaction Functions
-    private void IncreaseSatisfaction(int amount) { totalSatisfaction += amount; }
+    private void IncreaseSatisfaction(int amount) {
+        if (totalSatisfaction + amount > MAX_SATISFACTION)
+            totalSatisfaction = MAX_SATISFACTION;
+        else 
+            totalSatisfaction += amount; 
+    }
     private void DecreaseSatisfaction(int amount) { totalSatisfaction -= amount; }
     #endregion 
 }
