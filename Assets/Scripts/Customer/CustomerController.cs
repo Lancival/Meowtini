@@ -24,6 +24,13 @@ public class CustomerController : MonoBehaviour
     [SerializeField] GameObject cup2;  // Corr: cup2 prefab
     Drink targDrink;
 
+    [Header("Cats")]
+    [SerializeField] SpriteRenderer catRenderer; // Corr: Cat prefab
+    [SerializeField] Sprite star;
+    [SerializeField] Sprite strawberry;
+    [SerializeField] Sprite sunflower;
+    [SerializeField] Sprite sweater;
+
     [Header("Generator")]
     [SerializeField] DrinkGenerator gen;
 
@@ -37,9 +44,8 @@ public class CustomerController : MonoBehaviour
     void Start()
     {
         timer = startingTimer;
-        // timerIcon.color = iconColor;
-        // orangeDrink.DisplayIngredient("strawberry", 1);
         InvokeRepeating("HandleTimer", 0, 1);
+        ChooseCat();
         ChooseCup();
         // targDrink.PrintInfo();  // For debugging
         sceneController = GameObject.Find("Scene Controller").GetComponent<SceneController>();
@@ -48,6 +54,7 @@ public class CustomerController : MonoBehaviour
         images = gameObject.GetComponentsInChildren<Image>();
     } 
 
+    // Chooses a Cup shape randomly to initialize 
     void ChooseCup()  
     {
         switch(gen.cupShape)
@@ -60,6 +67,27 @@ public class CustomerController : MonoBehaviour
                 break;
             case 2:  // flask (cup0)
                 targDrink = cup0.GetComponent<Drink>();
+                break;
+        }
+    }
+
+    // Chooses a cat to display
+    void ChooseCat()
+    {
+        int rand = Mathf.RoundToInt(Random.RandomRange(0f, 3f)); // Gens a random integer between 0 and 3 inclusive
+        switch (rand)
+        {
+            case 0:
+                catRenderer.sprite = star;
+                break;
+            case 1:
+                catRenderer.sprite = sunflower;
+                break;
+            case 2:
+                catRenderer.sprite = strawberry;
+                break;
+            case 3:
+                catRenderer.sprite = sweater;
                 break;
         }
     }
