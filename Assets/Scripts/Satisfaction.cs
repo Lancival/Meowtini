@@ -21,7 +21,7 @@ public class Satisfaction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        satisfaction = maxSatisfaction;
+        satisfaction = 100;
         
         slider.minValue = 0;
         slider.maxValue = 100;
@@ -32,9 +32,9 @@ public class Satisfaction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        satisfaction = slider.value;
+        satisfaction = GameManager.Instance.GetSatisfaction();
         UpdateStars();
-        bar.localScale = new Vector3(Mathf.Lerp(bar.localScale.x, satisfaction / maxSatisfaction, 0.6f), 1);
+        bar.localScale = new Vector3(Mathf.Lerp(bar.localScale.x, satisfaction / maxSatisfaction, 0.4f), 1);
     }
 
     void UpdateStars()
