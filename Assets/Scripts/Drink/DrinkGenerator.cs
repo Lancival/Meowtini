@@ -15,6 +15,7 @@ public class DrinkGenerator : MonoBehaviour
     int numIce;
     private void Awake()
     {
+        sprites = GameObject.Find("SpriteList").GetComponent<SpriteList>();
         GenerateDrink(3);  // Reference difficulty
     }
     public void GenerateDrink(int difficulty)

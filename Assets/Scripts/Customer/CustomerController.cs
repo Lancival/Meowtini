@@ -42,6 +42,8 @@ public class CustomerController : MonoBehaviour
         InvokeRepeating("HandleTimer", 0, 1);
         ChooseCup();
         // targDrink.PrintInfo();  // For debugging
+        sceneController = GameObject.Find("Scene Controller").GetComponent<SceneController>();
+
         renderers = gameObject.GetComponentsInChildren<SpriteRenderer>();
         images = gameObject.GetComponentsInChildren<Image>();
     } 
