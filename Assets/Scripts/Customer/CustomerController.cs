@@ -125,32 +125,10 @@ public class CustomerController : MonoBehaviour
         }
 
         // Liquid check
-        float tolerance = 20f * Mathf.Pow(0.8f, 0);  // 0 should be set to the difficulty variable in the future
+        // float tolerance = 20f * Mathf.Pow(0.8f, 0);  // 0 should be set to the difficulty variable in the future
+        if (candidate.liquid != target.liquid) // If wrong liquid type
+            errorValue += 19;
         
-        foreach (string liquid in candidate.liquids.Keys)
-        {
-            if (target.toppings.ContainsKey(liquid))
-            {
-                float dif = Mathf.Abs(candidate.liquids[liquid] - target.liquids[liquid]);
-                if (dif > tolerance)
-                {
-                    dif -= tolerance;
-                    errorValue += Mathf.CeilToInt(dif / tolerance);  // Gain 1 errorValue for each tolerance away from the target answer
-                }
-            }
-            else
-            {
-                errorValue += 5;  // Gain 5 errorValue for adding wrong liquid
-            }
-        }
-        // Accounts for missing liquids from the candidate
-        foreach (string liquid in target.liquids.Keys)
-        {
-            if (!candidate.liquids.ContainsKey(liquid))
-            {
-                errorValue += 5;  // Gain 5 errorValue for missing a liquid
-            }
-        }
         return errorValue < errorThreshold;
     }
 
@@ -159,10 +137,10 @@ public class CustomerController : MonoBehaviour
     {
         if (EvaluateDrink(candidate, target))  // Drink acceptable
         {
-            GameManager.Instance.DrinkAccepted(1);
+            GameManager.Instance.DrinkAccepted(5);
         } else  // Drink unacceptable
         {
-            GameManager.Instance.DrinkDenied(1);
+            GameManager.Instance.DrinkDenied(10);
         }
         GameObject.Destroy(gameObject);
     }
