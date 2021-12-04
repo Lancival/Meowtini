@@ -41,6 +41,7 @@ public class Topping : MonoBehaviour
     {
     	Vector3 pos = cam.ScreenToWorldPoint(Input.mousePosition);
     	transform.position = new Vector3(pos.x, pos.y, 0);
+		this.gameObject.GetComponent<SpriteRenderer>().enabled = true;
     }
 
     void OnMouseUp()

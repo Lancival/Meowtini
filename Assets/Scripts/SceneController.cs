@@ -8,7 +8,7 @@ public class SceneController : MonoBehaviour
     [SerializeField] Canvas workstation;
     [SerializeField] Canvas counter;
     [SerializeField] SpriteRenderer background;
-
+    [SerializeField] GameObject[] workstationItems;
     [SerializeField] SpriteList sprites;
 
     private bool inWorkstation;
@@ -27,9 +27,18 @@ public class SceneController : MonoBehaviour
         {
             inWorkstation = true;
             background.sprite = sprites.GetSprite("workstation");
+            foreach (GameObject item in workstationItems)
+            {
+                item.SetActive(true);
+            }
+
         } else
         {
             inWorkstation = false;
+            foreach (GameObject item in workstationItems)
+            {
+                item.SetActive(false);
+            }
             background.sprite = sprites.GetSprite("counter");
         }
     }

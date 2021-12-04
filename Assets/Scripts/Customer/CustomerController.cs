@@ -150,6 +150,8 @@ public class CustomerController : MonoBehaviour
         // Hide Customer upon scene swap
         if (sceneController.isInWorkstation())
         {
+            DisableColliders();
+
             foreach (var renderer in renderers)
             {
                 renderer.enabled = false;
@@ -160,6 +162,8 @@ public class CustomerController : MonoBehaviour
             }
         } else
         {
+            EnableColliders();
+            
             foreach (var renderer in renderers)
             {
                 renderer.enabled = true;
@@ -173,6 +177,22 @@ public class CustomerController : MonoBehaviour
         // Update the heart display
         float yVal = Mathf.Lerp(timerIcon.transform.position.y + 0.13f, timerIcon.transform.position.y + 0.93f, (float) timer / startingTimer);
         mask.transform.position = new Vector3(timerIcon.transform.position.x, Mathf.Lerp(mask.transform.position.y, yVal, 1f), 0);
+    }
+
+    // Disables the colliders when the scene swaps
+    private void DisableColliders()
+    {
+        cup0.GetComponent<Collider2D>().enabled = false;
+        cup1.GetComponent<Collider2D>().enabled = false;
+        cup2.GetComponent<Collider2D>().enabled = false;
+    }
+
+    // Re-enable colliders on scene swap
+    private void EnableColliders ()
+    {
+        cup0.GetComponent<Collider2D>().enabled = true;
+        cup1.GetComponent<Collider2D>().enabled = true;
+        cup2.GetComponent<Collider2D>().enabled = true;
     }
 
     // Updates the time
