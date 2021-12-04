@@ -15,7 +15,7 @@ public class ToppingSpawner : MonoBehaviour
         if (topping != null)
         {
             initPos = topping.transform.position;
-            parentTransform = gameObject.transform.parent.transform;
+            parentTransform = GameObject.FindObjectOfType<Topping>().transform.parent.transform;
         }
     }
 
@@ -24,9 +24,11 @@ public class ToppingSpawner : MonoBehaviour
         // Create topping at mouse position
         GameObject copy = Instantiate(topping, initPos, Quaternion.identity);
         copy.name = topping.name;
+        Vector3 localScale = topping.transform.localScale;
         
-        // Reassign the parent of the GameObject
-        copy.transform.parent = parentTransform;
+        // Reassign the parent of the GameObject and fix scale
+        copy.transform.SetParent(parentTransform, true); 
+        copy.transform.localScale = localScale;
 
         // Reassign the prefab to copy
         topping = copy;
