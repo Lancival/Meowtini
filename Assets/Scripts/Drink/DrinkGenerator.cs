@@ -16,7 +16,7 @@ public class DrinkGenerator : MonoBehaviour
     private void Awake()
     {
         sprites = GameObject.Find("SpriteList").GetComponent<SpriteList>();
-        GenerateDrink(3);  // Reference difficulty
+        GenerateDrink(6);  // Reference difficulty
     }
     public void GenerateDrink(int difficulty)
     {
@@ -70,11 +70,18 @@ public class DrinkGenerator : MonoBehaviour
         result.toppings.Add("ice", numIce);
         // Assign toppings based on difficulty
         int maxToppings = difficulty / 3;
+        List<int> done = new List<int>();
+        done.Clear();
         for (int i = 0; i < maxToppings; i++)  // NOTE: Currently assumes you can't have more than 1 of each topping
         {
-            int index = Mathf.RoundToInt(Random.Range(0f, 1f));
-            result.toppings.Add(toppingList[index], 1);
-            toppingList.RemoveAt(index);
+            int index = Mathf.RoundToInt(Random.Range(0f, 1f) * 5); 
+            while (done.Contains(index))
+            {
+                index = Mathf.RoundToInt(Random.Range(0f, 1f) * 5);
+            }
+            result.AddTopping(toppingList[index]);
+            // Debug.Log(toppingList[index]);
+            done.Add(index);
         }
     }
 

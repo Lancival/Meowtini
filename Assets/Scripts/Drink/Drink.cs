@@ -9,7 +9,7 @@ public class Drink : MonoBehaviour
     /// </summary>
 
 
-    public Dictionary<string, float> liquids;  // String is the liquid name, float is the amount
+    // public Dictionary<string, float> liquids;  // String is the liquid name, float is the amount
     public Dictionary<string, int> toppings;  // String is topping name, int is number of said topping
 
 
@@ -61,16 +61,15 @@ public class Drink : MonoBehaviour
 
     public LiquidTypes liquid;
 
-
     void Awake()
     {
         toppingSprites = new Dictionary<string, SpriteRenderer>();
         toppingSprites.Clear();
         liquidSprites = new Dictionary<string, Sprite>();
         liquidSprites.Clear();
-        SetSprites();
         toppings = new Dictionary<string, int>();
         toppings.Clear();
+        SetSprites();
         liquid = LiquidTypes.clear;
         if (!isDisplay)
         {
@@ -94,6 +93,7 @@ public class Drink : MonoBehaviour
     private void FixedUpdate()
     {
         DisplayDrink();
+        // PrintInfo();
     }
     
     void SetSprites()
@@ -163,10 +163,7 @@ public class Drink : MonoBehaviour
         {
             Debug.Log(topping);
         }
-        foreach(string liquid in liquids.Keys)
-        {
-            Debug.Log(liquid);
-        }
+        Debug.Log(liquid);
     }
     public void DisplayDrink()
     {
@@ -193,8 +190,18 @@ public class Drink : MonoBehaviour
         }
 
         // Toppings
-        foreach(string topping in toppings.Keys)
+
+        
+        // Disable all nonactive elements
+        foreach (string sprite in toppingSprites.Keys)
         {
+            toppingSprites[sprite].enabled = false;
+        }
+
+        // Enable active elements
+        foreach (string topping in toppings.Keys)
+        {
+            // Debug.Log(topping);
             if (topping == "ice")
             {
                 // Yay I love brute force >:(
@@ -202,10 +209,13 @@ public class Drink : MonoBehaviour
                 {
                     case 1:
                         toppingSprites["ice0"].enabled = true;
+                        toppingSprites["ice1"].enabled = false;
+                        toppingSprites["ice2"].enabled = false;
                         break;
                     case 2:
                         toppingSprites["ice0"].enabled = true;
                         toppingSprites["ice1"].enabled = true;
+                        toppingSprites["ice2"].enabled = false;
                         break;
                     case 3:
                         toppingSprites["ice0"].enabled = true;
@@ -218,5 +228,6 @@ public class Drink : MonoBehaviour
                 toppingSprites[topping].enabled = true;
             }
         }
+        
     }
 }

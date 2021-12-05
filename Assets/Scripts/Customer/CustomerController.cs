@@ -35,7 +35,7 @@ public class CustomerController : MonoBehaviour
     [SerializeField] DrinkGenerator gen;
 
     [Header("Sprite Hiding")]
-    [SerializeField] SceneController sceneController;
+    [SerializeField] public SceneController sceneController;
 
     SpriteRenderer[] renderers;
     Image[] images;
@@ -145,6 +145,8 @@ public class CustomerController : MonoBehaviour
         GameObject.Destroy(gameObject);
     }
 
+    bool prevState = false;  // starts outside workstation
+
     private void Update()
     {
         // Hide Customer upon scene swap
@@ -160,10 +162,11 @@ public class CustomerController : MonoBehaviour
             {
                 image.enabled = false;
             }
-        } else
+        }
+        else if (prevState != sceneController.isInWorkstation())
         {
             EnableColliders();
-            
+
             foreach (var renderer in renderers)
             {
                 renderer.enabled = true;
@@ -173,6 +176,8 @@ public class CustomerController : MonoBehaviour
                 image.enabled = true;
             }
         }
+
+        prevState = sceneController.isInWorkstation();  // Update previous state
 
         // Update the heart display
         float yVal = Mathf.Lerp(timerIcon.transform.position.y + 0.13f, timerIcon.transform.position.y + 0.93f, (float) timer / startingTimer);
