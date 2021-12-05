@@ -97,6 +97,8 @@ public class DraggableDrink : MonoBehaviour
             // PLACEHOLDER  -- Problem here
             Debug.Log("On custmer");
             cust.CheckDrink(GameObject.FindGameObjectWithTag("Drink").GetComponent<Drink>(), cust.targDrink);
+            CupSpawner.numDrinks--;
+            Destroy(this.gameObject);
         }
 	}
 

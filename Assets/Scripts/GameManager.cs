@@ -52,6 +52,10 @@ public class GameManager : GenericSingleton<GameManager>
             SceneManager.LoadScene("End Scene");
             run = false;
         }
+        if (SceneManager.GetActiveScene().name == "End Scene")
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     // Find a suitable position to spawn the customer; don't spawn if no spot is freed.
