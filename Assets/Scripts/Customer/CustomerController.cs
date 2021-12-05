@@ -44,6 +44,7 @@ public class CustomerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.tag = "Customer";
         timer = startingTimer;
         InvokeRepeating("HandleTimer", 0, 1);
         ChooseCat();
@@ -157,13 +158,14 @@ public class CustomerController : MonoBehaviour
         Debug.Log("Checking");
         if (EvaluateDrink(candidate, target))  // Drink acceptable
         {
-            GameManager.Instance.DrinkAccepted(5);
+            GameManager.Instance.DrinkAccepted(50);
+            GameManager.Instance.updateRemovedCustomer(Mathf.RoundToInt(transform.position.x));
+            GameObject.Destroy(gameObject);
         } else  // Drink unacceptable
         {
             GameManager.Instance.DrinkDenied(10);
         }
-        GameManager.Instance.updateRemovedCustomer(Mathf.RoundToInt(transform.position.x));
-        GameObject.Destroy(gameObject);
+        
     }
 
     bool prevState = false;  // starts outside workstation

@@ -7,7 +7,6 @@ public class Satisfaction : MonoBehaviour
 {
     [SerializeField] RectTransform bar;
     [SerializeField] Image barColor;
-    [SerializeField] Slider slider;  // Entirely temporary. Used to test the bar
     [SerializeField] Image star1;
     [SerializeField] Image star2;
     [SerializeField] Image star3;
@@ -22,9 +21,6 @@ public class Satisfaction : MonoBehaviour
     void Start()
     {
         satisfaction = 100;
-        
-        slider.minValue = 0;
-        slider.maxValue = 100;
         starLit = sprites.GetSprite("starLit");
         starUnlit = sprites.GetSprite("starUnlit");
     }

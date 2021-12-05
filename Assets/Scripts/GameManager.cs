@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : GenericSingleton<GameManager>
 {
@@ -40,12 +41,17 @@ public class GameManager : GenericSingleton<GameManager>
         SpawnCustomer();
     }
 
+    bool run = true;
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
         secondsElapsed = (int)(timer % 60);
-        
+        if ((totalSatisfaction <= 0 || totalSatisfaction >= 100) && run)
+        {
+            SceneManager.LoadScene("End Scene");
+            run = false;
+        }
     }
 
     // Find a suitable position to spawn the customer; don't spawn if no spot is freed.

@@ -131,6 +131,7 @@ public class DraggableDrink : MonoBehaviour
         if (collision.gameObject.tag == "Customer")
         {
             onCustomer = true;
+            // Debug.Log("i c custmr");
             cust = collision.GetComponent<CustomerController>();
         }
 
