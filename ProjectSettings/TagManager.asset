@@ -8,6 +8,10 @@ TagManager:
   - Dispenser
   - Ice
   - Shaker
+  - Counter
+  - Customer
+  - Button
+  - Trash
   layers:
   - Default
   - TransparentFX
