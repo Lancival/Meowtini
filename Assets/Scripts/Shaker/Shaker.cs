@@ -119,12 +119,13 @@ public class Shaker : MonoBehaviour
             {
                 drink.liquid = Drink.LiquidTypes.clear;
             }
-
             else
             {
                 drink.liquid = Drink.LiquidTypes.blue;
             }
 
+            drink.toppings["ice"] = numIceCubes;
+            
             Animator liquid = drink.GetComponentInChildren<Animator>();
             if (liquid == null)
             {
