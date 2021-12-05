@@ -47,9 +47,6 @@ public class CupSpawner : MonoBehaviour
         copy.transform.SetParent(parentTransform, true); 
         copy.transform.localScale = localScale;
 
-        // Reassign the prefab to copy
-        cup = copy;
-
         // Increase drink count
         numDrinks++;
     }

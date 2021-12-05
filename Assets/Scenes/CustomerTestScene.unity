@@ -1191,7 +1191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 615825512}
   - component: {fileID: 615825511}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CounterLocation
   m_TagString: Counter
   m_Icon: {fileID: 0}
@@ -1661,7 +1661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5238058881414504430, guid: ee1aeec75302c94418fbee95e13bed5e, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5238058881414504431, guid: ee1aeec75302c94418fbee95e13bed5e, type: 3}
       propertyPath: m_Name
@@ -2634,6 +2634,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 495431763}
     m_Modifications:
+    - target: {fileID: 4125107231946717211, guid: f74fe11bc85801f40b56228684dd0359, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5185023893520800048, guid: f74fe11bc85801f40b56228684dd0359, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2708,7 +2712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5185023893520800063, guid: f74fe11bc85801f40b56228684dd0359, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74fe11bc85801f40b56228684dd0359, type: 3}
@@ -3654,7 +3658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8156195523690997834, guid: bb04b2e21ec2f324cba2680d7cdc0fff, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8156195523690997835, guid: bb04b2e21ec2f324cba2680d7cdc0fff, type: 3}
       propertyPath: m_RootOrder
