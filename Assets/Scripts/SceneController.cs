@@ -37,7 +37,8 @@ public class SceneController : MonoBehaviour
             inWorkstation = false;
             foreach (GameObject item in workstationItems)
             {
-                item.SetActive(false);
+                if (item.tag != "Drink")
+                    item.SetActive(false);
             }
             background.sprite = sprites.GetSprite("counter");
         }

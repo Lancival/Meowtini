@@ -17,6 +17,9 @@ public class DraggableDrink : MonoBehaviour
     public bool canDrag {private set; get;}
 
     [SerializeField] private bool isDragging = false;
+
+    // reference to shaker
+    Shaker shaker;
     
     // Should snap to these coordinates when onCounter is true
     public Transform counterLocation;
@@ -31,6 +34,7 @@ public class DraggableDrink : MonoBehaviour
         onCounter = false;
         onCustomer = false;
         DraggableDrink.Pool.Add(this);
+        shaker = GameObject.FindWithTag("Shaker").GetComponent<Shaker>();
     }
 
     // Returns true if we can drag this instance of a drink, false otherwise
@@ -53,6 +57,7 @@ public class DraggableDrink : MonoBehaviour
             if (CanDrag())
                 canDrag = true;
             isDragging = true;
+            this.gameObject.tag = "Drink";
         }
 
         // Check if it's in the trash
@@ -70,6 +75,7 @@ public class DraggableDrink : MonoBehaviour
             drink.isDisplay = false;
             this.gameObject.transform.position = counterLocation.position;
             isDragging = !isDragging;
+            shaker.canShake = !shaker.canShake;
         }
 
         if (onButton)

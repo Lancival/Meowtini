@@ -11,17 +11,14 @@ public class ShakerCap : MonoBehaviour
     [SerializeField] private int minVolume;
     
     [SerializeField] private float shakeAnimationTime;
-
-    private bool canShake;
     
     void Start()
     {
         shaker = GameObject.FindWithTag("Shaker").GetComponent<Shaker>();
-        canShake = true;
     }
 
     private void OnMouseDown() {
-        if (canShake)
+        if (shaker.canShake)
         {
             StartCoroutine(ShakerAnimationCoroutine());    
         }
@@ -31,10 +28,10 @@ public class ShakerCap : MonoBehaviour
     {
         if (shaker.curVolume >= minVolume)
         {
-            canShake = false;
+            shaker.canShake = false;
             shaker.gameObject.GetComponent<Animator>().SetTrigger("Shake");
             yield return new WaitForSeconds(shakeAnimationTime);
-            canShake = true;
+            shaker.canShake = true;
         }
     }
 }

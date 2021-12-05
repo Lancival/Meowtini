@@ -19,6 +19,7 @@ public class Shaker : MonoBehaviour
 
     [Header("Shaker Cap")]
     [SerializeField] private GameObject shakerCap;
+    public bool canShake = false;
     
     public bool canDropIce = false;
 
@@ -104,6 +105,26 @@ public class Shaker : MonoBehaviour
             // Set volume back to 0
             curVolume = 0;
             
+            string color = GetMajorityColor();
+
+            if (color == "Purple")
+            {
+                drink.liquid = Drink.LiquidTypes.purple;
+            }
+            else if (color == "Orange")
+            {
+                drink.liquid = Drink.LiquidTypes.orange;
+            }
+            else if (color == "Clear")
+            {
+                drink.liquid = Drink.LiquidTypes.clear;
+            }
+
+            else
+            {
+                drink.liquid = Drink.LiquidTypes.blue;
+            }
+
             Animator liquid = drink.GetComponentInChildren<Animator>();
             if (liquid == null)
             {
