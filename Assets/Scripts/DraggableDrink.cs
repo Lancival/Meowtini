@@ -14,6 +14,8 @@ public class DraggableDrink : MonoBehaviour
     [SerializeField] private bool onCustomer;
     [SerializeField] private bool onButton;
 
+    CustomerController cust;
+
     public bool canDrag {private set; get;}
 
     [SerializeField] private bool isDragging = false;
@@ -92,10 +94,14 @@ public class DraggableDrink : MonoBehaviour
 
         if (onCustomer)
         {
-            // PLACEHOLDER
+            // PLACEHOLDER  -- Problem here
+            Debug.Log("On custmer");
+            cust.CheckDrink(GameObject.FindGameObjectWithTag("Drink").GetComponent<Drink>(), cust.targDrink);
         }
 	}
+
     
+
     void FixedUpdate()
     {
         if (canDrag)
@@ -108,6 +114,7 @@ public class DraggableDrink : MonoBehaviour
         }
     }
 
+    
     void OnTriggerEnter2D(Collider2D collision)
     {
         // Check tag
@@ -124,6 +131,7 @@ public class DraggableDrink : MonoBehaviour
         if (collision.gameObject.tag == "Customer")
         {
             onCustomer = true;
+            cust = collision.GetComponent<CustomerController>();
         }
 
         if (collision.gameObject.tag == "Trash")

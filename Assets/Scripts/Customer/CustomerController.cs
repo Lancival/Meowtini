@@ -22,7 +22,7 @@ public class CustomerController : MonoBehaviour
     [SerializeField] GameObject cup0;  // Corresponds to cup0 prefab
     [SerializeField] GameObject cup1;  // Corr: cup1 prefab
     [SerializeField] GameObject cup2;  // Corr: cup2 prefab
-    Drink targDrink;
+    public Drink targDrink;
 
     [Header("Cats")]
     [SerializeField] SpriteRenderer catRenderer; // Corr: Cat prefab
@@ -134,8 +134,27 @@ public class CustomerController : MonoBehaviour
     }
 
     // Handle drink submission - Call this function when a drink is delivered to the customer
-    void CheckDrink(Drink candidate, Drink target)
+    public void CheckDrink()
     {
+        Drink candidate = Drink.FindClosestDrink(gameObject.transform.position);
+        Drink target = targDrink;
+        Debug.Log("Checking");
+        if (EvaluateDrink(candidate, target))  // Drink acceptable
+        {
+            GameManager.Instance.DrinkAccepted(40);
+            GameManager.Instance.updateRemovedCustomer(Mathf.RoundToInt(transform.position.x));
+            GameObject.Destroy(gameObject);
+        }
+        else  // Drink unacceptable
+        {
+            // GameManager.Instance.DrinkDenied(10);
+        }
+        
+    }
+
+    public void CheckDrink(Drink candidate, Drink target)
+    {
+        Debug.Log("Checking");
         if (EvaluateDrink(candidate, target))  // Drink acceptable
         {
             GameManager.Instance.DrinkAccepted(5);
@@ -148,6 +167,8 @@ public class CustomerController : MonoBehaviour
     }
 
     bool prevState = false;  // starts outside workstation
+
+    
 
     private void Update()
     {

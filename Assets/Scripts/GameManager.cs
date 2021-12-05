@@ -48,11 +48,23 @@ public class GameManager : GenericSingleton<GameManager>
         
     }
 
-    // Find a suitable position to spawn the customer
+    // Find a suitable position to spawn the customer; don't spawn if no spot is freed.
     void SpawnCustomer()
     {
         int[] ls = new int[3];
+        int i;
         locations.Keys.CopyTo(ls, 0);
+        for (i = 0; i < ls.Length; i++)
+        {
+            if (locations[ls[i]])
+            {
+                break;
+            }
+        }
+        if (i >= ls.Length)
+        {
+            return;
+        }
         int index = Mathf.RoundToInt(Random.Range(0, locations.Keys.Count - 1));
         while (!locations[ls[index]])
         {
