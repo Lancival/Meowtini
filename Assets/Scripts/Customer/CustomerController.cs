@@ -155,6 +155,8 @@ public class CustomerController : MonoBehaviour
 
     public void CheckDrink(Drink candidate, Drink target)
     {
+        if (sceneController.isInWorkstation())
+            return;
         Debug.Log("Checking");
         if (EvaluateDrink(candidate, target))  // Drink acceptable
         {
