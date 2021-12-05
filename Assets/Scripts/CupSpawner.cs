@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CupSpawner : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class CupSpawner : MonoBehaviour
     // Reference to the number of drink in the scene
     public static int numDrinks = 1;
 
+    private bool canSpawn = false;
+
     void Start()
     {
         if (cup != null)
@@ -22,10 +25,21 @@ public class CupSpawner : MonoBehaviour
         }
     }
 
+    public void OnMouseDown()
+    {
+        if (numDrinks <= 1)
+        {
+            SpawnCup();
+        }
+    }
+
     public void SpawnCup()
     {   
         // Create topping at mouse position
+        cup.SetActive(true);
         GameObject copy = Instantiate(cup, initPos, Quaternion.identity);
+        cup.SetActive(false);
+
         copy.name = cup.name;
         Vector3 localScale = cup.transform.localScale;
         

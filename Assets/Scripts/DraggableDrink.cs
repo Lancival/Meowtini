@@ -27,14 +27,31 @@ public class DraggableDrink : MonoBehaviour
     // All draggable drinks active in the scene
     public static HashSet<DraggableDrink> Pool = new HashSet<DraggableDrink>();
 
+    void OnEnable()
+    {
+        DraggableDrink.Pool.Add(this);
+    }
+
+    void OnDisable()
+    {
+        DraggableDrink.Pool.Remove(this);
+    }
+    
     void Awake()
 	{
 		cam = Camera.main;
         onTrash = false;
         onCounter = false;
         onCustomer = false;
-        DraggableDrink.Pool.Add(this);
+    }
+
+    void Start()
+    {
         shaker = GameObject.FindWithTag("Shaker").GetComponent<Shaker>();
+        isDragging = true;
+        if (CanDrag())
+            canDrag = true;
+        this.gameObject.tag = "Drink";
     }
 
     // Returns true if we can drag this instance of a drink, false otherwise
@@ -50,16 +67,6 @@ public class DraggableDrink : MonoBehaviour
 
     // When the cup is first clicked, we'll spawn a duplicate behind it.
 	void OnMouseDown() {
-        if (CupSpawner.numDrinks < 2)
-        {
-            Debug.Log("Clicked on cup...Spawning a new one");
-            spawner.SpawnCup();
-            if (CanDrag())
-                canDrag = true;
-            isDragging = true;
-            this.gameObject.tag = "Drink";
-        }
-
         // Check if it's in the trash
         if (onTrash)
         {
