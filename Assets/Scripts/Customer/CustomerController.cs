@@ -30,6 +30,7 @@ public class CustomerController : MonoBehaviour
     [SerializeField] Sprite strawberry;
     [SerializeField] Sprite sunflower;
     [SerializeField] Sprite sweater;
+    [SerializeField] Animator catAnim;
 
     [Header("Generator")]
     [SerializeField] DrinkGenerator gen;
@@ -142,6 +143,7 @@ public class CustomerController : MonoBehaviour
         {
             GameManager.Instance.DrinkDenied(10);
         }
+        GameManager.Instance.updateRemovedCustomer(Mathf.RoundToInt(transform.position.x));
         GameObject.Destroy(gameObject);
     }
 
@@ -208,8 +210,15 @@ public class CustomerController : MonoBehaviour
         {
             Debug.Log("ORDER FAILED");
             timerIcon.color = Color.black;
-            GameManager.Instance.DrinkDenied(1);  // Calls GameManager to decrease satisfaction and reset the combo
+            GameManager.Instance.DrinkDenied(40);  // Calls GameManager to decrease satisfaction and reset the combo
+            GameManager.Instance.updateRemovedCustomer(Mathf.RoundToInt(transform.position.x));
             GameObject.Destroy(gameObject);
         }
+    }
+
+    private void OnDestroy()
+    {
+        Debug.Log("Customer destroyed");
+        catAnim.SetTrigger("Fade");
     }
 }

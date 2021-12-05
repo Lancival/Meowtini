@@ -147,6 +147,7 @@ MonoBehaviour:
   strawberry: {fileID: 21300000, guid: a1d96cee67f6b42f3a48e7f0593f43a2, type: 3}
   sunflower: {fileID: 21300000, guid: d0acd82dad8e24c07b886a1756856ccf, type: 3}
   sweater: {fileID: 21300000, guid: 5a65f6371ad4942b2b63ddd9752a150e, type: 3}
+  catAnim: {fileID: 7138368413519887443}
   gen: {fileID: 8985989403969297012}
   sceneController: {fileID: 0}
 --- !u!114 &8985989402827563614
@@ -1009,6 +1010,11 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 2280001739904660769, guid: 8e16e0f80782c42f2b954004f7ae933b, type: 3}
   m_PrefabInstance: {fileID: 8985989404756707696}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &7138368413519887443 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2280001739904660771, guid: 8e16e0f80782c42f2b954004f7ae933b, type: 3}
+  m_PrefabInstance: {fileID: 8985989404756707696}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8985989404786812699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1082,13 +1088,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74fe11bc85801f40b56228684dd0359, type: 3}
---- !u!1 &4269485025361509925 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5185023893520800062, guid: f74fe11bc85801f40b56228684dd0359, type: 3}
-  m_PrefabInstance: {fileID: 8985989404786812699}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4269485025361509931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5185023893520800048, guid: f74fe11bc85801f40b56228684dd0359, type: 3}
+  m_PrefabInstance: {fileID: 8985989404786812699}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4269485025361509925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5185023893520800062, guid: f74fe11bc85801f40b56228684dd0359, type: 3}
   m_PrefabInstance: {fileID: 8985989404786812699}
   m_PrefabAsset: {fileID: 0}
