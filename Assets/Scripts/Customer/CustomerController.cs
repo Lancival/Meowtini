@@ -226,6 +226,7 @@ public class CustomerController : MonoBehaviour
         cup0.GetComponent<Collider2D>().enabled = true;
         cup1.GetComponent<Collider2D>().enabled = true;
         cup2.GetComponent<Collider2D>().enabled = true;
+        gameObject.GetComponent<Collider2D>().enabled = true;
     }
 
     // Updates the time
