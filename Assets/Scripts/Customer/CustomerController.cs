@@ -217,6 +217,7 @@ public class CustomerController : MonoBehaviour
         cup0.GetComponent<Collider2D>().enabled = false;
         cup1.GetComponent<Collider2D>().enabled = false;
         cup2.GetComponent<Collider2D>().enabled = false;
+        gameObject.GetComponent<Collider2D>().enabled = false;
     }
 
     // Re-enable colliders on scene swap
