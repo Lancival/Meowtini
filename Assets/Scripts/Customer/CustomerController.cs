@@ -38,6 +38,10 @@ public class CustomerController : MonoBehaviour
     [Header("Sprite Hiding")]
     [SerializeField] public SceneController sceneController;
 
+    [Header("Drink Score")]
+    [SerializeField] public int DRINK_ACCEPTED_SCORE = 10;
+    [SerializeField] public int DRINK_DENIED_SCORE = 10;
+
     SpriteRenderer[] renderers;
     Image[] images;
 
@@ -142,7 +146,7 @@ public class CustomerController : MonoBehaviour
         Debug.Log("Checking");
         if (EvaluateDrink(candidate, target))  // Drink acceptable
         {
-            GameManager.Instance.DrinkAccepted(40);
+            GameManager.Instance.DrinkAccepted(DRINK_ACCEPTED_SCORE);
             GameManager.Instance.updateRemovedCustomer(Mathf.RoundToInt(transform.position.x));
             GameObject.Destroy(gameObject);
         }
@@ -160,12 +164,12 @@ public class CustomerController : MonoBehaviour
         Debug.Log("Checking");
         if (EvaluateDrink(candidate, target))  // Drink acceptable
         {
-            GameManager.Instance.DrinkAccepted(50);
+            GameManager.Instance.DrinkAccepted(DRINK_ACCEPTED_SCORE);
             GameManager.Instance.updateRemovedCustomer(Mathf.RoundToInt(transform.position.x));
             GameObject.Destroy(gameObject);
         } else  // Drink unacceptable
         {
-            GameManager.Instance.DrinkDenied(10);
+            GameManager.Instance.DrinkDenied(DRINK_DENIED_SCORE);
         }
         
     }

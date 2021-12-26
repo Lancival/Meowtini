@@ -12,6 +12,7 @@ TagManager:
   - Customer
   - Button
   - Trash
+  - Inactive
   layers:
   - Default
   - TransparentFX

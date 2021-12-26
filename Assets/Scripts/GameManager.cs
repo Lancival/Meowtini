@@ -107,11 +107,13 @@ public class GameManager : GenericSingleton<GameManager>
     #region Serving Drinks
     public void DrinkAccepted(int amount)
     {
+        Debug.Log("Drink accepted");
         IncreaseComboCounter();
         IncreaseSatisfaction(amount);
     }
     public void DrinkDenied(int amount)
     {   
+        Debug.Log("Drink denied");
         ResetComboCounter();
         DecreaseSatisfaction(amount);
     } 

@@ -15,10 +15,11 @@ public class DraggableDrink : MonoBehaviour
     [SerializeField] private bool onButton;
 
     CustomerController cust;
+    SceneController sceneController;
 
     public bool canDrag {private set; get;}
 
-    [SerializeField] private bool isDragging = false;
+    public bool isDragging = false;
 
     // reference to shaker
     Shaker shaker;
@@ -50,6 +51,7 @@ public class DraggableDrink : MonoBehaviour
     void Start()
     {
         shaker = GameObject.FindWithTag("Shaker").GetComponent<Shaker>();
+        sceneController = GameObject.FindObjectOfType<SceneController>();
         isDragging = true;
         if (CanDrag())
             canDrag = true;
@@ -171,5 +173,7 @@ public class DraggableDrink : MonoBehaviour
     {
         DraggableDrink.Pool.Remove(this);
         CupSpawner.numDrinks--;
+        if (sceneController != null)
+            sceneController.workstationItems.RemoveAt(sceneController.workstationItems.Count - 1);
     }
 }

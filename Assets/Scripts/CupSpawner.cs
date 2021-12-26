@@ -7,6 +7,7 @@ public class CupSpawner : MonoBehaviour
 {
    // Prefab of cup you want to spawn
     public GameObject cup;
+    public SceneController sceneController;
 
     private Vector3 initPos;
     private Transform parentTransform;
@@ -23,6 +24,7 @@ public class CupSpawner : MonoBehaviour
             initPos = cup.transform.position;
             parentTransform = this.transform.parent.transform;
         }
+        sceneController = GameObject.FindObjectOfType<SceneController>();
     }
 
     public void OnMouseDown()
@@ -46,6 +48,9 @@ public class CupSpawner : MonoBehaviour
         // Reassign the parent of the GameObject and fix scale
         copy.transform.SetParent(parentTransform, true); 
         copy.transform.localScale = localScale;
+
+        // Register cup to the scene controller
+        sceneController.workstationItems.Add(copy);
 
         // Increase drink count
         numDrinks++;

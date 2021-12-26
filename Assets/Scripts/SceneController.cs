@@ -8,14 +8,25 @@ public class SceneController : MonoBehaviour
     [SerializeField] Canvas workstation;
     [SerializeField] Canvas counter;
     [SerializeField] SpriteRenderer background;
-    [SerializeField] GameObject[] workstationItems;
     [SerializeField] SpriteList sprites;
 
+
+    public List<GameObject> workstationItems;   
     private bool inWorkstation;
+
+    void Awake()
+    {
+        workstationItems = new List<GameObject>();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        GameObject items = GameObject.Find("Workstation Items");
+        foreach (Transform child in items.transform)
+        {
+            workstationItems.Add(child.gameObject);
+        }
         workstation.enabled = false;
         inWorkstation = false;
     }
@@ -29,7 +40,8 @@ public class SceneController : MonoBehaviour
             background.sprite = sprites.GetSprite("workstation");
             foreach (GameObject item in workstationItems)
             {
-                item.SetActive(true);
+                if (item.tag != "Inactive")
+                    item.SetActive(true);
             }
 
         } else
@@ -37,7 +49,15 @@ public class SceneController : MonoBehaviour
             inWorkstation = false;
             foreach (GameObject item in workstationItems)
             {
-                if (item.tag != "Drink")
+                // Keep drink enabled if it is picked up
+                if (item.tag == "Drink")
+                {
+                    DraggableDrink drink = item.GetComponent<DraggableDrink>();
+                    if (drink.isDragging)
+                    {
+                        continue;
+                    }
+                }
                     item.SetActive(false);
             }
             background.sprite = sprites.GetSprite("counter");
@@ -49,5 +69,4 @@ public class SceneController : MonoBehaviour
     {
         return inWorkstation;
     }
-
 }
