@@ -148,6 +148,7 @@ public class CustomerController : MonoBehaviour
         {
             GameManager.Instance.DrinkAccepted(DRINK_ACCEPTED_SCORE);
             GameManager.Instance.updateRemovedCustomer(Mathf.RoundToInt(transform.position.x));
+            GameManager.Instance.SpawnCustomer();
             GameObject.Destroy(gameObject);
         }
         else  // Drink unacceptable
@@ -166,12 +167,12 @@ public class CustomerController : MonoBehaviour
         {
             GameManager.Instance.DrinkAccepted(DRINK_ACCEPTED_SCORE);
             GameManager.Instance.updateRemovedCustomer(Mathf.RoundToInt(transform.position.x));
+            GameManager.Instance.SpawnCustomer();
             GameObject.Destroy(gameObject);
         } else  // Drink unacceptable
         {
             GameManager.Instance.DrinkDenied(DRINK_DENIED_SCORE);
         }
-        
     }
 
     bool prevState = false;  // starts outside workstation
@@ -241,8 +242,9 @@ public class CustomerController : MonoBehaviour
         {
             Debug.Log("ORDER FAILED");
             timerIcon.color = Color.black;
-            GameManager.Instance.DrinkDenied(40);  // Calls GameManager to decrease satisfaction and reset the combo
+            GameManager.Instance.DrinkDenied(DRINK_DENIED_SCORE);  // Calls GameManager to decrease satisfaction and reset the combo
             GameManager.Instance.updateRemovedCustomer(Mathf.RoundToInt(transform.position.x));
+            GameManager.Instance.SpawnCustomer();
             GameObject.Destroy(gameObject);
         }
     }

@@ -16,7 +16,7 @@ public class GameManager : GenericSingleton<GameManager>
     [Header("Universal Timer")]
         [Tooltip("Timer which starts at the beginning of the game")]
         [SerializeField] private float timer = 0.0f;
-        [Tooltip("How many seconds have passed since the beginnig of the game")]
+        [Tooltip("How many seconds have passed since the beginning of the game")]
         [SerializeField] private int secondsElapsed;
     
     [Header("Combo counter")]
@@ -37,8 +37,8 @@ public class GameManager : GenericSingleton<GameManager>
         locations.Add(-5, true);
         locations.Add(-1, true);
         locations.Add(3, true);
-        SpawnCustomer();
-        SpawnCustomer();
+        spawnCustomer();
+        spawnCustomer();
     }
 
     bool run = true;
@@ -58,8 +58,20 @@ public class GameManager : GenericSingleton<GameManager>
         }
     }
 
+    public void SpawnCustomer()
+    {
+        int waitTime =  Random.Range(0, 2);
+        StartCoroutine(Waiter(waitTime));
+        spawnCustomer();
+    }
+
+    IEnumerator Waiter(int waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+    }
+
     // Find a suitable position to spawn the customer; don't spawn if no spot is freed.
-    void SpawnCustomer()
+    void spawnCustomer()
     {
         int[] ls = new int[3];
         int i;

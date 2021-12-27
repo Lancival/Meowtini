@@ -22,7 +22,7 @@ public class DraggableDrink : MonoBehaviour
     public bool isDragging = false;
 
     // reference to shaker
-    Shaker shaker;
+    public Shaker shaker;
     
     // Should snap to these coordinates when onCounter is true
     public Transform counterLocation;
@@ -50,7 +50,8 @@ public class DraggableDrink : MonoBehaviour
 
     void Start()
     {
-        shaker = GameObject.FindWithTag("Shaker").GetComponent<Shaker>();
+        if (shaker == null)
+            shaker = GameObject.FindWithTag("Shaker").GetComponent<Shaker>();
         sceneController = GameObject.FindObjectOfType<SceneController>();
         isDragging = true;
         if (CanDrag())
@@ -175,5 +176,7 @@ public class DraggableDrink : MonoBehaviour
         CupSpawner.numDrinks--;
         if (sceneController != null)
             sceneController.workstationItems.RemoveAt(sceneController.workstationItems.Count - 1);
+        if (shaker != null)
+            shaker.canShake = false;
     }
 }
